@@ -1,4 +1,4 @@
-# Portfolio Part 3: Abstract Classes
+# Portfolio Part 3: Abstract Class
 
 - **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
 - **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
@@ -8,7 +8,7 @@
 
 Now that you've had a chance to brainstorm your own components
 and even create the kernel and enhanced interfaces, it's time
-to start writing some code. 
+to start writing some code.
 
 In this assignment, you will be making your first abstract
 class. The abstract class will take on the name `ComponentSecondary`,
@@ -27,21 +27,21 @@ you specified in the enhanced interface. Because the secondary
 abstract class is layered over the kernel interface, you cannot
 implement the methods of your enhanced interface using the
 underlying representation. As a result, these methods must be
-implemented using the kernel methods only. 
+implemented using the kernel methods only.
 
 Surprisingly, you have done this several times before without
 probably realizing it. For example, when you first learned recursion
 in software 1, [you were tasked with implementing the secondary
-methods of NaturalNumber][lab-14]. At the time, they were static 
-methods, but you were tasked with only implementing the secondary 
-methods using the kernel methods. 
+methods of NaturalNumber][lab-14]. At the time, they were static
+methods, but you were tasked with only implementing the secondary
+methods using the kernel methods.
 
 You did this a few other times as well. For example, we asked you
-to [implement the secondary methods for set at one point][lab-21]. 
+to [implement the secondary methods for set at one point][lab-21].
 We did this by having you extend `Set1L`, so you could override
 the implementation of `remove()` and `add()`. At the time, we
 didn't force you to only use kernel methods, but the premise
-remains the same. Meanwhile, in a later lab, you were tasked with 
+remains the same. Meanwhile, in a later lab, you were tasked with
 implementing the secondary method `sort()` of `Queue`.
 
 Once you have implemented all of the secondary methods, you must
@@ -49,7 +49,7 @@ also implement the key `Object` methods. It's up to you to decide
 which ones you want to implement, but `toString()` and `equals()`
 are a great start. You may also implement `hashCode()` if you so
 choose. Note that these methods do not have access to the representation,
-so you must also implement them using the kernel methods only. 
+so you must also implement them using the kernel methods only.
 
 ## Assignment Rubric
 
@@ -60,15 +60,15 @@ your adherence to the software sequence design principles:
 1. You must implement all of the secondary methods that you defined
    in your enhanced interface using Kernel methods only.
 2. You must override at least `toString()` and `equals()` of
-   `Object`, and other methods if you so choose. 
-3. Your solution must compile. 
-4. You must justify any changes you make to your original design 
+   `Object`, and other methods if you so choose.
+3. Your solution must compile.
+4. You must justify any changes you make to your original design
    (there will be space for this in the pre-assignment task area).
 
 Note that you will not be able to test any of your methods, so don't
 worry about them being 100% accurate. In writing, we call this a
 "shitty first draft" or SFD for short. As a result, hitting 3/4
-of these criteria is enough to earn full credit on the assignment. 
+of these criteria is enough to earn full credit on the assignment.
 
 ## Pre-Assignment Tasks
 
@@ -86,7 +86,7 @@ Here's what that might look like:
 > precondition of `remove()` without it.
 >
 > Changed `getSignals()` method to `removeSignal()` method to eliminate
-> aliasing in my design. 
+> aliasing in my design.
 
 Feel free to use the template above when writing out your changes.
 
@@ -103,7 +103,7 @@ As promised, here is where you will drop in your abstract class design:
 ## Post-Assignment Tasks
 
 The following sections detail everything that you should do once
-you've completed the assignment. 
+you've completed the assignment.
 
 ### Submission
 
@@ -116,15 +116,15 @@ how, check out this [Markdown to PDF guide][markdown-to-pdf-guide].
 Following the completion of this assignment, you will be assigned
 three students' component interfaces assignments for review.
 Please do not spend a ton of time on your reviews, **perhaps 10-15
-minutes each**. Your job during the peer review process is to help 
-your peers edit their contracts. Specifically, you should be helping 
+minutes each**. Your job during the peer review process is to help
+your peers edit their contracts. Specifically, you should be helping
 them with the readability of their contracts. If something isn't clear
 to you, it's probably not clear to others, so help them communicate
-their contracts better. When reviewing your peers' assignments, 
+their contracts better. When reviewing your peers' assignments,
 please treat them with respect. We recommend using the following
 feedback rubric to ensure that your feedback is both helpful and
 respectful (you may want to render the markdown as HTML or a PDF
-to read this rubric as a table). 
+to read this rubric as a table).
 
 | Criteria of Constructive Feedback | Missing                                                                                                                           | Developing                                                                                                                                                                                                                                | Meeting                                                                                                                                                               |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -139,7 +139,7 @@ to read this rubric as a table).
 Now that you've had a chance to complete the assignment, is there
 anything you would like to say about the assignment? For example,
 are there any resources that could help you complete this assignment?
-Feel free to use the feedback rubric above when reviewing this 
+Feel free to use the feedback rubric above when reviewing this
 assignment.
 
 <!-- TODO: share your feedback here -->
