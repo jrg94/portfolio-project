@@ -46,5 +46,12 @@ include them here, so you could see how it might be done from scratch. If at any
 point you're struggling with Step 3, just copy the lib folder from the monorepo
 template.
 
+## Next Steps
+
+Now that you have everything setup, you can begin crafting your component. There
+will be deadlines for each step in Carmen, but you're free to complete each step
+as early as you'd like. To start, you'll want to visit the [doc](doc/) directory 
+for each assignment file. 
+
 [components-jar]: http://web.cse.ohio-state.edu/software/common/components.jar
 [jdk-downloads]: https://www.oracle.com/java/technologies/downloads/
