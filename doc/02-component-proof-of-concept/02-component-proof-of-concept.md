@@ -37,6 +37,7 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I have added my dot number to the top of this document
 - [ ] I have added the due date to the top of this document
 - [ ] I have read the assignment overview in the "Assignment Overview" section
+- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
 - [ ] I have read the assignment rubric in the "Assignment Rubric" section
 - [ ] I have read this checklist
 
@@ -57,7 +58,7 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I am prepared to submit both PDFs on Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
-## Learning Objectives
+## Assignment Learning Objectives
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
