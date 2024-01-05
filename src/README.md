@@ -20,6 +20,7 @@ In other words, you would need to nest a `components` folder in the `src`
 folder. Then, nest the `naturalnumber` folder in the `components` folder.
 The result would be the following directory structure:
 
+```
 src
 └───components
     └───naturalnumber
@@ -27,5 +28,6 @@ src
             NaturalNumber1L.java
             NaturalNumberKernel.java
             NaturalNumberSecondary.java
+```
 
 If done correctly, your portfolio can be bundled as its own `.jar`.
