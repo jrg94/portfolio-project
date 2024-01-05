@@ -6,28 +6,24 @@
 
 ## Assignment Overview
 
-The overall goal of the portfolio project is to have you
-design and implement your own OSU component. There are
-no limits to what you choose to design and implement, but
-your component must fit within the constraints of our software
-sequence discipline. In other words, the component must extend
-from Standard and must include both a kernel and a secondary
-interface.
+The overall goal of the portfolio project is to have you design and implement 
+your own OSU component. There are no limits to what you choose to design and 
+implement, but your component must fit within the constraints of our software
+sequence discipline. In other words, the component must extend from Standard and 
+must include both a kernel and a secondary interface.
 
-Because this is a daunting project, we will be providing you
-with a series of activities to aid in your design decisions.
-For example, the point of this assignment is to help you brainstorm
-a few possible components and get some feedback. For each of these
-components, you will need to specify the high-level design
-in terms of the software sequence discipline. In other words,
-you will describe a component, select a few kernel methods
-for your component, and select a few secondary methods to layer 
-on top of your kernel methods.
+Because this is a daunting project, we will be providing you with a series of 
+activities to aid in your design decisions. For example, the point of this 
+assignment is to help you brainstorm a few possible components and get some 
+feedback. For each of these components, you will need to specify the high-level 
+design in terms of the software sequence discipline. In other words, you will 
+describe a component, select a few kernel methods for your component, and select 
+a few secondary methods to layer on top of your kernel methods.
 
-You are not required to specify contracts at this time. However,
-you are welcome to be as detailed as you'd like. More detail means
-you will be able to get more detailed feedback, which may help
-you decide which component to ultimately implement.
+You are not required to specify contracts at this time. However, you are welcome 
+to be as detailed as you'd like. More detail means you will be able to get more 
+detailed feedback, which may help you decide which component to ultimately 
+implement.
 
 ## Assignment Rubric
 
