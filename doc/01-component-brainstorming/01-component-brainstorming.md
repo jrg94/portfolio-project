@@ -72,7 +72,8 @@ Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
 are meant to provide ongoing feedback in the learning process. Therefore,
 the rubric is designed to assess the learning objectives *directly* in a way
-that is low stakes—meaning you shouldn't have to worry about the grade.
+that is low stakes—meaning you shouldn't have to worry about the grade. Just
+do good work.
 
 1. (3 points) Each design must align with your personal values and long-term
    goals. Because the goal of this project is to help your build out a
@@ -87,9 +88,6 @@ that is low stakes—meaning you shouldn't have to worry about the grade.
    should contain both kernel and secondary methods. Also, null and aliasing
    must be avoided, when possible. The methods themselves must also be in
    justifiable locations, such as kernel or secondary.
-
-With that said, these criteria will not be overly strict as you are only just
-brainstorming some components.
 
 ## Pre-Assignment
 

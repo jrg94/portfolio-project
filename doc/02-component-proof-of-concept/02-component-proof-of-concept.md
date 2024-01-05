@@ -57,20 +57,41 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I am prepared to submit both PDFs on Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
-## Assignment Rubric
+## Learning Objectives
 
-For this assignment, you will be graded following the completion of your
-proof-of-concept. For this assignment, you will be graded on the extent to which
-your code proves your concept. We will be doing that through the following
-criteria:
+Without learning objectives, there really is no clear reason why a particular
+assessment or activity exists. Therefore, to be completely transparent, here is
+what we're hoping you will learn through this particular aspect of the portfolio
+project. Specifically, students should be able to:
 
-1. The implementation makes use of a represention that prioritizes ease of
-   implementation and/or efficiency. In other words, the underlying fields
-   make sense for what the code is modeling.
-2. The implementation shows off a range of methods that speak to the likelihood
-   that the design could be implemented within the discipline. In other words,
-   there are a diverse set of methods showing the breadth of skills needed to
-   implement the design.
+1. Predict which design would be appropriate to move forward with given time
+   constraints, interests, and/or humility (among other real-world variables)
+2. Select appropriate methods and fields to demonstrate the achievability of
+   the proof-of-concept
+3. Assemble a minimal working implementation of one of their designs
+
+## Assignment Rubric: 10 Points
+
+Again, to be completely transparent, most of the portfolio project, except the
+final submission, is designed as a formative assessment. Formative assessments
+are meant to provide ongoing feedback in the learning process. Therefore,
+the rubric is designed to assess the learning objectives *directly* in a way
+that is low stakes—meaning you shouldn't have to worry about the grade. Just
+do good work.
+
+1. (2 points) The choice of design to implement must be justified by considering
+   a variety of real-world factors. It is okay to say that you selected a
+   particular design because you do not know which design is best. We will
+   provide a space for you to justify your selection below.
+2. (4 points) The implementation must show off a range of methods on some
+   representation to demonstrate feasibility of the overall design. Ideally,
+   these methods should be significantly different. For example, don't implement
+   only getters. Try to show the extent of the work that would be needed to
+   implement the entire design.
+3. (4 points) The implementation must include a main method that constructs the
+   component and uses it in a variety of use cases. Part of a proof-of-concept
+   is showing the client view. At this stage, we care less about the actual
+   implementation and more about whether a client would actually want to use it.
 
 ## Pre-Assignment Tasks
 
