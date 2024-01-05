@@ -53,26 +53,40 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I am prepared to submit the PDF on Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
-## Assignment Rubric
+## Learning Objectives
 
-For this assignment, you will be graded following the completion of three
-designs. Each design will be graded on four criteria (see Carmen for more
-details):
+Without learning objectives, there really is no clear reason why a particular
+assessment or activity exists. Therefore, to be completely transparent, here is
+what we're hoping you will learn through this particular aspect of the portfolio
+project. Specifically, students should be able to:
 
-1. The design must be achievable over the course of a single semester. Don't be
-   afraid to design something very small. There is no shame in keeping it
-   simple.
-2. The design must fit within the software sequence discipline. In other words,
-   your design should expect to inherit from Standard, and it should contain
-   both kernel and secondary methods. Also, null and aliasing must be avoided,
-   when possible.
-3. The design decisions must be justifiable. In other words, it must be clear
-   why you put certain methods in the kernel and others in secondary. Feel free
-   to justify your decisions explicitly.
-4. The design must align with your personal values and long-term goals. Because
-   the goal of this project is to help your build out a portfolio, you really
-   ought to care about what you're designing. We'll give you a chance to share
-   your personal values, interests, and long-term goals below.
+1. Integrate their areas of interest in their personal lives and/or careers with
+   their knowledge of software design
+2. Determine the achievablility of a software design given time constraints
+3. Design high-level software components following the software sequence
+   discipline
+
+## Assignment Rubric: 10 Points
+
+Again, to be completely transparent, most of the portfolio project, except the
+final submission, is designed as a formative assessment. Formative assessments
+are meant to provide ongoing feedback in the learning process. Therefore,
+the rubric is designed to assess the learning objectives *directly* in a way
+that is low stakes—meaning you shouldn't have to worry about the grade.
+
+1. (3 points) Each design must align with your personal values and long-term
+   goals. Because the goal of this project is to help your build out a
+   portfolio, you really ought to care about what you're designing. We'll give
+   you a chance to share your personal values, interests, and long-term goals
+   below.
+2. (3 points) Each design must be achievable over the course of a single
+   semester. Don't be afraid to design something very small. There is no shame
+   in keeping it simple.
+3. (4 points) Each design must fit within the software sequence discipline. In
+   other words, your design should expect to inherit from Standard, and it
+   should contain both kernel and secondary methods. Also, null and aliasing
+   must be avoided, when possible. The methods themselves must also be in
+   justifiable locations, such as kernel or secondary.
 
 With that said, these criteria will not be overly strict as you are only just
 brainstorming some components.
