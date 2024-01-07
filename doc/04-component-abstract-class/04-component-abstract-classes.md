@@ -79,7 +79,7 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I am prepared to submit both PDFs on Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
-## Learning Objectives
+## Assignment Learning Objectives
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
