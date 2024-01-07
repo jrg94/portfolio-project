@@ -55,7 +55,7 @@ a quick overview of what you need to do to get the assignment done as follows:
 
 ### Ongoing Tasks
 
-- [ ] I have shared my design changes in the "Pre-Assignment" section
+- [ ] I have shared my representation and justification in the "Pre-Assignment" section
 - [ ] I have created a kernel implementation
   - [ ] I have created a new Java file in `src`
   - [ ] I have named the new Java file correctly (e.g., `NaturalNumber1`)
@@ -96,7 +96,7 @@ do good work.
 1. (3 points) In this assignment, you must select a representation for your
    kernel implementation and justify it. Remember that there are a variety of
    reasons for selecting a particular representation, but a good start is to
-   choose one that would easy to work with. Also, remember that part of
+   choose one that would be easy to work with. Also, remember that part of
    selecting a representation is also explaining which configurations are valid
    and how the representation will be interpreted.
 2. (3 points) In the source code, you must provide that actual convention and
