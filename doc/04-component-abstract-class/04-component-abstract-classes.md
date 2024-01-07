@@ -1,4 +1,4 @@
-# Portfolio Part 3: Abstract Class
+# Portfolio Part 4: Abstract Class
 
 - **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
 - **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
@@ -6,19 +6,16 @@
 
 ## Assignment Overview
 
-Now that you've had a chance to brainstorm your own components
-and even create the kernel and enhanced interfaces, it's time
-to start writing some code.
-
-In this assignment, you will be making your first abstract
-class. The abstract class will take on the name `ComponentSecondary`,
-where `Component` is the name of your component. For example,
-if you're making a Point3D component, the abstract class would
-be called `Point3DSecondary` as follows:
+Now that you've had a chance to refine your designs a bit, it's time to start
+writing some code. In this assignment, you will be making your first abstract
+class. The abstract class will take on the name `ComponentSecondary`, where
+`Component` is the name of your component. For example, if you're making a
+Point3D component, the abstract class would be called `Point3DSecondary` as
+follows:
 
 ```java
 public abstract class Point3DSecondary implements Point3D {
-    ...
+   ...
 }
 ```
 

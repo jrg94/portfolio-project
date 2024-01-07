@@ -12,6 +12,29 @@ point, you've also received feedback on your designs. Now, you will have the
 opportunity to put together the client-side interfaces, specifically the kernel
 and enhanced interfaces.
 
+The kernel interface provides the minimal functionality you would expect of
+your data type. By convention, we would name our kernel interface
+`ComponentKernel`, where `Component` is the name of your component. As an
+example, the kernel interface for the `Point3D` component would be written
+as `Point3DKernel`, and it's skeleton would look as follows:
+
+```java
+public interface Point3DKernel extends Standard<Point3D> {
+   ...
+}
+```
+
+Similarly, the enhanced interfaces provides all of the methods that we want
+to layer on top of the kernel. Again, by convention, we use the name of the
+component directly for the enhanced interface. For example, `Point3D` would
+be the name of the enhanced interface, and its skeleton would look as follows:
+
+```java
+public interface Point3D extends Point3DKernel {
+   ...
+}
+```
+
 Remember, the interfaces are what the client will see, so you should really be
 considering the types of functionality that your user would want. If it helps,
 ask yourself the following: what would I (as in you, the reader) want this
