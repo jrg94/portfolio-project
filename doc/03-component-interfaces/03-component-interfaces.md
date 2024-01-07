@@ -96,9 +96,11 @@ assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
 project. Specifically, students should be able to:
 
-1. Provide contracts for clients via method headers
-2. Assemble a kernel interface in line with the software sequence discipline
-3. Assemble an enhanced interface in line with the software sequence discipline
+1. Identify areas of improvement in previous designs and strategies to address
+   them
+2. Provide contracts for clients via method headers
+3. Assemble a kernel interface in line with the software sequence discipline
+4. Assemble an enhanced interface in line with the software sequence discipline
 
 ## Assignment Rubric
 
@@ -109,7 +111,11 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (4 points) Both interfaces must include full documentation for all method
+1. (2 points) Because these assignments build on each other, it's important
+   to acknowledge the growth and development of your work. Therefore, you must
+   show what has been changed following the proof-of-concept as it pertains
+   to the interface design.
+2. (4 points) Both interfaces must include full documentation for all method
    headers. Documentation must meet the bare minimum expectations for JUnit,
    which means including `@param` for every parameter and `@return` for every
    return type. Documentation must also meet the bare minimum expectations
@@ -117,13 +123,13 @@ do good work.
    other aspects of contracts should be included where applicable, such as
    `@requires`, `@replaces`, `@clears`, and `@updates`. There is no requirement
    to use mathematical notation in your contracts.
-2. (3 points) The kernel interface must, at the very least, inherit from
+3. (2 points) The kernel interface must, at the very least, inherit from
    `Standard` and compile. In addition, it must contain a handful of minimally
    viable method headers (i.e., the minimum number of methods needed to model
    the data type). Do not include fields or method implementations. However, you
    may include any nested interfaces needed for your data type. You may also
    include constants that may be helpful throughout the design.
-3. (3 points) The enhanced interface must, at the very least, inherit from
+4. (2 points) The enhanced interface must, at the very least, inherit from
    the kernel interface and compile. In addition, it may contain as many method
    headers as you would like, but the methods must be able to be implemented by
    the kernel and `Standard` methods. Again, do not include any method
