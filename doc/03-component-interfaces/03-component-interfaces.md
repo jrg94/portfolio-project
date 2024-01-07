@@ -62,7 +62,7 @@ a quick overview of what you need to do to get the assignment done as follows:
 - [ ] I have shared assignment feedback in the "Assignment Feedback" section
 - [ ] I have converted this document to a PDF
 - [ ] I have converted my kernel interface to a PDF
-- [ ] I have converted my enhance interface to a PDF
+- [ ] I have converted my enhanced interface to a PDF
 - [ ] I am prepared to submit all three PDFs on Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
@@ -73,38 +73,38 @@ assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
 project. Specifically, students should be able to:
 
-1.
+1. Provide contracts for clients via method headers
+2. Assemble a kernel interface in line with the software sequence discipline
+3. Assemble an enhanced interface in line with the software sequence discipline
 
 ## Assignment Rubric
 
-For this assignment, you will be graded on your completion
-of two key interfaces in your design: kernel and enhanced.
+Again, to be completely transparent, most of the portfolio project, except the
+final submission, is designed as a formative assessment. Formative assessments
+are meant to provide ongoing feedback in the learning process. Therefore,
+the rubric is designed to assess the learning objectives *directly* in a way
+that is low stakes—meaning you shouldn't have to worry about the grade. Just
+do good work.
 
-Unlike part one, the main areas of focus for assessment
-will be on the course discipline (see Carmen for more
-details). Broadly:
-
-- The kernel interface must inherit from Standard, and
-  the secondary interface must inherit from the kernel.
-- All kernel and secondary method headers must be defined
-  using OSU components where applicable or your own
-  defined innerclasses (e.g., Node in LinkedList).
-- All kernel and secondary methods must have contracts
-  in line with the course discipline. In other words,
-  these contracts must include the following annotations:
-  `@ensures`. In addition, the contracts must include the
-  following annotations as needed: `@requires`, `@param`,
-  `@return`, `@updates`, `@replaces`, `@clears`. There is
-  no requirement that you use mathematical notation in
-  your contracts, but they should be as clear as possible.
-  Keep in mind that these are the docs your client would
-  read when looking to use your component, so exercise
-  empathy.
-- All interfaces must compile.
-
-Unlike the previous assignment, each interface is graded
-primarily on completion of the above criteria. There
-really is no "correctness" grade in this case.
+1. (4 points) Both interfaces must include full documentation for all method
+   headers. Documentation must meet the bare minimum expectations for JUnit,
+   which means including `@param` for every parameter and `@return` for every
+   return type. Documentation must also meet the bare minimum expectations
+   for design by contract, which includes an `@ensures` for every method. All
+   other aspects of contracts should be included where applicable, such as
+   `@requires`, `@replaces`, `@clears`, and `@updates`. There is no requirement
+   to use mathematical notation in your contracts.
+2. (3 points) The kernel interface must, at the very least, inherit from
+   `Standard` and compile. In addition, it must contain a handful of minimally
+   viable method headers (i.e., the minimum number of methods needed to model
+   the data type). Do not include fields or method implementations. However, you
+   may include any nested interfaces needed for your data type. You may also
+   include constants that may be helpful throughout the design.
+3. (3 points) The enhanced interface must, at the very least, inherit from
+   the kernel interface and compile. In addition, it may contain as many method
+   headers as you would like, but the methods must be able to be implemented by
+   the kernel and `Standard` methods. Again, do not include any method
+   implementations or fields at this point.
 
 ## Pre-Assignment Tasks
 
