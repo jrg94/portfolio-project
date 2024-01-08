@@ -1,0 +1,30 @@
+{
+    "editor.rulers": [
+        80,
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+    "markdown-pdf.convertOnSave": true,
+    "markdown-pdf.format": "Letter",
+    "markdown-pdf.outputDirectory": "",
+    "markdown-pdf.highlightStyle": "a11y-light.css",
+    "print.colourScheme": "A11 Y",
+    "java.checkstyle.configuration": ".vscode\\osu-cse-checkstyle-config.xml",
+    "java.format.settings.url": ".vscode\\osu-cse-formatter.xml",
+    "java.format.settings.profile": "OSU CSE",
+    "java.project.sourcePaths": [
+        "src",
+        "test"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "java.saveActions.organizeImports": true,
+    "java.cleanup.actionsOnSave": [
+        "qualifyMembers",
+        "addOverride"
+    ]
+}
