@@ -7,7 +7,7 @@
 ## Assignment Overview
 
 By now, you should have an entire component implemented at all levels. For
-example, you should have two interfaces, and abstract class, and a kernel
+example, you should have two interfaces, an abstract class, and a kernel
 implementation.
 
 Now, we want you to start producing your actual portfolio. To do that, you
@@ -66,19 +66,30 @@ a quick overview of what you need to do to get the assignment done as follows:
 ### Ongoing Tasks
 
 - [ ] I have shared my reflection in the "Pre-Assignment" section
-- [ ] I have created a kernel implementation
+- [ ] I have created a test file for my kernel implementation
+  - [ ] I have created a new Java file in `test`
+  - [ ] I have exhaustively tested all of the kernel methods
+  - [ ] I am aware that I cannot test my component against a reference implementation
+- [ ] I have created a test file for my abstract class
+  - [ ] I have created a new Java file in `test`
+  - [ ] I have exhaustively tested all of the secondary methods
+  - [ ] I am aware that I cannot test my component against a reference implementation
+- [ ] I have create a code sample demonstrating a use case of my component
   - [ ] I have created a new Java file in `src`
-  - [ ] I have named the new Java file correctly (e.g., `NaturalNumber1`)
-  - [ ] I have implemented all of the kernel methods
-  - [ ] I have implemented all of the Standard methods
-  - [ ] I have respected the kernel purity rule
+  - [ ] I have imported and used my component in this file
+- [ ] I have create another qualitatively different code sample demonstrating a use case of my component
+  - [ ] I have created a new Java file in `src`
+  - [ ] I have imported and used my component in this file
+- [ ] I have published my project to an open-source remote repository
+  - [ ] I have ensured that my repository is public
+  - [ ] I know the project url (e.g., https://github.com/TheRenegadeCoder/sample-programs)
 
 ### Submission Tasks
 
 - [ ] I have shared assignment feedback in the "Assignment Feedback" section
 - [ ] I have converted this document to a PDF
-- [ ] I have converted my kernel implementation to a PDF
-- [ ] I am prepared to submit both PDFs on Carmen
+- [ ] I compressed my project to a `.zip` file
+- [ ] I am prepared to submit the PDF, the zip, and the link to the remote repo to Carmen
 - [ ] I am prepared to give my peers feedback on their ideas
 
 ## Assignment Learning Objectives
