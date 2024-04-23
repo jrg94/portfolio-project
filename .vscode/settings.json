@@ -19,6 +19,8 @@
     "markdown-pdf.outputDirectory": "",
     "markdown-pdf.highlightStyle": "a11y-light.css",
     "print.colourScheme": "A11 Y",
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.tree.showCountsInTree": true,
     "java.checkstyle.configuration": ".vscode/osu-cse-checkstyle-config.xml",
     "java.format.settings.url": ".vscode/osu-cse-formatter.xml",
     "java.format.settings.profile": "OSU CSE",

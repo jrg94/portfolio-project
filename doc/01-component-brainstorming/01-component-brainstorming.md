@@ -6,6 +6,8 @@
 
 ## Assignment Overview
 
+<!-- TODO: read the assignment overview and delete this comment -->
+
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
 implement, but your component must fit within the constraints of our software
@@ -27,34 +29,30 @@ implement.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: read this checklist and delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have shared my interests in the "Pre-Assignment" section
-- [ ] I have drafted my first component idea in the "Component Designs" section
-- [ ] I have drafted my second component idea in the "Component Designs" section
-- [ ] I have dradted my third component idea in the "Component Designs" section
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I am prepared to submit the PDF on Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
+
+<!-- TODO: read the assignment learning objectives and delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -68,6 +66,8 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
+
+<!-- TODO: read the assignment rubric and delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments

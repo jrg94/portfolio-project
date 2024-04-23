@@ -4,7 +4,8 @@
         "yzane.markdown-pdf", // Markdown to PDF extension
         "vscjava.vscode-java-pack", // General Java startup extension pack
         "pdconsec.vscode-print", // Code printing to PDF extension
-        "shengchen.vscode-checkstyle" // Java CheckStyle extension
+        "shengchen.vscode-checkstyle", // Java CheckStyle extension
+        "gruntfuggly.todo-tree" // todo view extension
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
     "unwantedRecommendations": []
