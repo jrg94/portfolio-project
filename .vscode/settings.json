@@ -4,7 +4,12 @@
     ],
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.eol": "auto",
+    "files.trimTrailingWhitespace": true,
     "markdown-pdf.convertOnSave": true,
     "markdown-pdf.format": "Letter",
     "markdown-pdf.outputDirectory": "",
@@ -21,9 +26,8 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "files.trimTrailingWhitespace": true,
-    "java.saveActions.organizeImports": true,
-    "java.cleanup.actionsOnSave": [
+    "java.saveActions.cleanup": true,
+    "java.cleanup.actions": [
         "qualifyMembers",
         "addOverride"
     ]
