@@ -12,7 +12,6 @@
     "files.trimTrailingWhitespace": true,
     "markdown-pdf.convertOnSave": true,
     "markdown-pdf.convertOnSaveExclude": [
-        "CHANGELOG.md",
         "README.md"
     ],
     "markdown-pdf.format": "Letter",
