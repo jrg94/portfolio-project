@@ -98,49 +98,25 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests and delete this comment -->
+<!--
+  TODO: briefly talk about your interests and delete this comment.
+  Also, protip: you can preview what your response looks like by hitting
+  the magnifying glass icon in the upper-right corner or pressing CTRL+K and
+  then V. This kind of button combination is called a chord, for whatever
+  reason
+-->
 
 ## Assignment
 
 As previously stated, you are tasked with brainstorming 3 possible components.
-To aid you in this process, we have provided some example components that may
-help you in your brainstorming. These components are organized by CSE
-specializations.
+To aid you in this process, we have provided [some example components][example-components]
+that may help you in your brainstorming. All of these components were made at
+some point by one of your peers, so you should feel confident that you can
+accomplish any of them.
 
-- Artificial Intelligence
-  - Artificial Neuron
-  - Activation Function
-  - Graphs
-  - Search
-- Computer Graphics and Game Design
-  - Pixel
-  - Polygon
-  - Geometry
-  - Pathing
-- Database Systems and Data Analytics
-  - Object Relational Mapping (ORM)
-  - Any Data Model
-  - Scraping
-  - Data Mining
-- Information and Computation Assurance
-  - Password Hashing
-- Computer Networking
-  - Packet
-  - MAC Address
-  - IP Address
-- Computer Systems
-  - Complex Logic Gate
-  - Semiconductor
-- Software Engineering
-  - Unit Testing
-  - Performance Testing
-- Individualized Option (e.g., X + CS)
-  - Mathematical Matrix
-  - Music Playlist
-
-There is no requirement that you make use of any of the subdisciplines above.
-If you want to model something from the real-world, go for it! Very common early
-object projects usually attempt to model real-world systems like banks, cars,
+There is no requirement that you use any of the components listed above.
+If you want to model something else, go for it! Very common early object
+projects usually attempt to model real-world systems like banks, cars,
 etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
@@ -257,4 +233,5 @@ PDF to read this rubric as a table).
 
 <!-- TODO: share your feedback here -->
 
+[example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
