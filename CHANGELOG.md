@@ -10,10 +10,6 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Updated `settings.json` to format document on save using `editor.formatOnSave`
-  setting
-- Updated `settings.json` to exclude certain files from markdown to PDF
-  generation using `markdown-pdf.convertOnSaveExclude` setting
 - Added `/bin` to `.gitignore`, so binaries are no longer committed
 - Added the TODO tree extensions to `extensions.json`
 - Added the `todo-tree.general.showActivityBarBadge` setting to `settings.json`
@@ -21,6 +17,10 @@ the following form: YYYY.0M.0D.
 
 ### Changed
 
+- Updated `settings.json` to format document on save using `editor.formatOnSave`
+  setting
+- Updated `settings.json` to exclude certain files from markdown to PDF
+  generation using `markdown-pdf.convertOnSaveExclude` setting
 - Updated `settings.json` to use latest `java.cleanup.actions` setting
 - Updated `settings.json` to automatically choose line endings using `files.eol`
   setting
@@ -30,6 +30,8 @@ the following form: YYYY.0M.0D.
   questions
 - Changed the component brainstorming example from `Point3D` to `NaturalNumber`
   to avoid the getter/setter trend
+- Updated assignment feedback sections to include a link to a survey that
+  I'll actually review
 
 ### Fixed
 

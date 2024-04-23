@@ -173,12 +173,12 @@ table).
 
 ### Assignment Feedback
 
-> Now that you've had a chance to complete the assignment, is there anything you
-> would like to say about the assignment? For example, are there any resources
-> that could help you complete this assignment? Feel free to use the feedback
-> rubric above when reviewing this assignment.
+If you'd like to give feedback for this assignment (or any assignment, really),
+make use of [this survey][survey]. Your feedback helps make assignments
+better for future students.
 
-<!-- TODO: share your feedback here -->
+<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [pottery-fails]: https://www.youtube.com/shorts/Kqb9l113F_0?feature=share
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
+[survey]: https://forms.gle/dumXHo6A4Enucdkq9
