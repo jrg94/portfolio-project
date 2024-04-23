@@ -1,10 +1,12 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
+- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
+- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
+
+<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -27,34 +29,30 @@ implement.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: browse the checklist then delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have shared my interests in the "Pre-Assignment" section
-- [ ] I have drafted my first component idea in the "Component Designs" section
-- [ ] I have drafted my second component idea in the "Component Designs" section
-- [ ] I have dradted my third component idea in the "Component Designs" section
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I am prepared to submit the PDF on Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
+
+<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -68,6 +66,8 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
+
+<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -98,94 +98,90 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests and delete this comment -->
+<!-- TODO: briefly talk about your interests then delete this comment.
+Also, protip: you can preview what your response looks like by hitting
+the magnifying glass icon in the upper-right corner or pressing CTRL+K and
+then V. This kind of button combination is called a chord, for whatever
+reason -->
 
 ## Assignment
 
+<!-- TODO: read the assignment section then delete this comment -->
+
 As previously stated, you are tasked with brainstorming 3 possible components.
-To aid you in this process, we have provided some example components that may
-help you in your brainstorming. These components are organized by CSE
-specializations.
+To aid you in this process, we have provided [some example components][example-components]
+that may help you in your brainstorming. All of these components were made at
+some point by one of your peers, so you should feel confident that you can
+accomplish any of them.
 
-- Artificial Intelligence
-  - Artificial Neuron
-  - Activation Function
-  - Graphs
-  - Search
-- Computer Graphics and Game Design
-  - Pixel
-  - Polygon
-  - Geometry
-  - Pathing
-- Database Systems and Data Analytics
-  - Object Relational Mapping (ORM)
-  - Any Data Model
-  - Scraping
-  - Data Mining
-- Information and Computation Assurance
-  - Password Hashing
-- Computer Networking
-  - Packet
-  - MAC Address
-  - IP Address
-- Computer Systems
-  - Complex Logic Gate
-  - Semiconductor
-- Software Engineering
-  - Unit Testing
-  - Performance Testing
-- Individualized Option (e.g., X + CS)
-  - Mathematical Matrix
-  - Music Playlist
+<!-- TODO: browse the list of possible projects then delete this comment -->
 
-There is no requirement that you make use of any of the subdisciplines above.
-If you want to model something from the real-world, go for it! Very common early
-object projects usually attempt to model real-world systems like banks, cars,
+There is no requirement that you use any of the components listed above.
+If you want to model something else, go for it! Very common early object
+projects usually attempt to model real-world systems like banks, cars,
 etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-With all that in mind, here's an example component you can use for reference.
-Feel free to use this example as the groundwork for your own components below.
+<!-- TODO: review this example component then delete this comment -->
 
-- Example Component: `Point3D`
-  - **Description**: The purpose of this component is to model a 3-dimensional point.
-    Our intent with this design was to keep a simple kernel that provides getters and
-    setters for the three underyling coordinates. Then, we provide more complex
-    mathematical operations in the secondary interface. It might be possible to
-    create an immutable version of the class by removing the setters and instead
-    having all secondary methods return new points. However, this design seems more
-    inline with NaturalNumber.
+To help you brainstorm a few components, we've provided an example below of a
+component you already know well: NaturalNumber. We highly recommend that you
+mirror the formatting as close as possible in your designs. By following this
+format, we can be more confident that your designs will be possible.
+
+- Example Component: `NaturalNumber`
+  - **Description**:
+    - The purpose of this component is to model a non-negative
+      integer. Our intent with this design was to keep a simple kernel that
+      provides the minimum functionality needed to represent a natural number.
+      Then, we provide more complex mathematical operations in the secondary
+      interface.
   - **Kernel Methods**:
-    - `double getX()`: gets the x-coordinate of `this`
-    - `double getY()`: gets the y-coordinate of `this`
-    - `double getZ()`: gets the z-coordinate of `this`
-    - `double setX(double x)`: sets the x-coordinate of `this`
-    - `double setY(double y)`: sets the y-coordinate of `this`
-    - `double setZ(double z)`: sets the z-coordinate of `this`
+    - `void multiplyBy10(int k)`: multiplies `this` by 10 and adds `k`
+    - `int divideBy10()`: divides `this` by 10 and reports the remainder
+    - `boolean isZero()`: reports whether `this` is zero
   - **Secondary Methods**:
-    - `void translate(double x, double y, double z)`: moves `this` by translating
-      each coordinate by `x`, `y`, and `z`, respectively
-    - `void translate(Point3D p)`: moves `this` by treating `p` as a vector
-    - `void move(double x, double y, double z)`: moves `this` by overwriting each
-      coordinate with `x`, `y`, and `z`, respectively
-    - `void move(Point3D p)`: moves `this` to `p`
-    - `double distance(Point3D p)`: gives the distance between `this` and `p`
-    - `Point3D vectorTo(Point3D p)`: gives the vector from `this` to `p`
-    - `boolean isOrigin()`: returns `true` if all three coordinates are zero
+    - `void add(NaturalNumber n)`: adds `n` to `this`
+    - `void subtract(NaturalNumber n)`: subtracts `n` from `this`
+    - `void multiply(NaturalNumber n)`: multiplies `this` by `n`
+    - `NaturalNumber divide(NaturalNumber n)`: divides `this` by `n`, returning
+      the remainder
+    - ...
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, basically all OSU components have to be mutable as long as they
+        inherit from Standard. `clear`, `newInstance`, and `transferFrom` all
+        mutate `this`.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+        - No. All methods work with integers or other NaturalNumbers.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+        - Yes. NaturalNumber is base 10, and we track that in a constant called
+          `RADIX`.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
+        manipulate our natural number as needed. For example, to implement
+        `increment`, we can trim the last digit off with `divideBy10`, add 1 to
+        it, verify that the digit hasn't overflown, and multiply the digit back.
+        If the digit overflows, we reset it to zero and recursively call
+        `increment`.
 
 Keep in mind that the general idea when putting together these layered designs
 is to put the minimal implementation in the kernel. In this case, the kernel is
-only responsible for giving back the coordinates of the point. The secondary
-methods use these getters and setters to perform more complex operations like
-translating the point or computing the distance between two points.
+only responsible for manipulating a digit at a time in the number. The secondary
+methods use these manipulations to perform more complex operations like
+adding two numbers together.
 
 Also, keep in mind that we don't know the underlying implementation. It would be
-completely reasonable to create a `Point3D1L` class which layers the kernel on
-top of the existing `Point` class in Java. It would also be reasonable to
-implement `Point3D2` on top of three doubles and `Point3D3` on top of an array.
-Do not worry about your implementations at this time.
+completely reasonable to create a `NaturalNumber1L` class which layers the
+kernel on top of the existing `BigInteger` class in Java. It would also be
+reasonable to implement `NaturalNumber2` on top of `String` as seen in
+Project 2. Do not worry about your implementations at this time.
 
 On top of everything above, there is no expectation that you have a perfect
 design. Part of the goal of this project is to have you actually use your
@@ -196,23 +192,70 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #1:
+- Component Design #1: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
+    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
+    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
+    - <!-- TODO: list secondary methods then delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument then delete this comment -->
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #2:
-  - **Description**:
-  - **Kernel Methods**:
-  - **Secondary Methods**:
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #3:
+- Component Design #2: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
+    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
+    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
+    - <!-- TODO: list secondary methods then delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument then delete this comment -->
+
+
+- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+  - **Description**:
+    - <!-- TODO: describe your component then delete this comment -->
+  - **Kernel Methods**:
+    - <!-- TODO: list kernel methods then delete this comment -->
+  - **Secondary Methods**:
+    - <!-- TODO: list secondary methods then delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument then delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument then delete this comment -->
 
 ## Post-Assignment
 
@@ -221,6 +264,8 @@ completed the assignment.
 
 ### Submission
 
+<!-- TODO: read the submission instructions then delete this comment -->
+
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -228,6 +273,8 @@ created for you automatically every time you save, so just double check that
 all your work is there before submitting.
 
 ### Peer Review
+
+<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -255,6 +302,7 @@ PDF to read this rubric as a table).
 > that could help you complete this assignment? Feel free to use the feedback
 > rubric above when reviewing this assignment.
 
-<!-- TODO: share your feedback here -->
+<!-- TODO: share your feedback here then delete this comment -->
 
+[example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
