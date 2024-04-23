@@ -6,7 +6,7 @@
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit",
+        "source.organizeImports": "explicit"
     },
     "files.eol": "auto",
     "files.trimTrailingWhitespace": true,
