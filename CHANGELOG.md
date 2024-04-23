@@ -30,6 +30,8 @@ the following form: YYYY.0M.0D.
   questions
 - Changed the component brainstorming example from `Point3D` to `NaturalNumber`
   to avoid the getter/setter trend
+- Updated assignment feedback sections to include a link to a survey that
+  I'll actually review
 
 ### Fixed
 
