@@ -122,46 +122,61 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-With all that in mind, here's an example component you can use for reference.
-Feel free to use this example as the groundwork for your own components below.
+To help you brainstorm a few components, we've provided an example below of a
+component you already know well: NaturalNumber. We highly recommend that you
+mirror the formatting as close as possible in your designs. By following this
+format, we can be more confident that your designs will be possible.
 
-- Example Component: `Point3D`
-  - **Description**: The purpose of this component is to model a 3-dimensional point.
-    Our intent with this design was to keep a simple kernel that provides getters and
-    setters for the three underyling coordinates. Then, we provide more complex
-    mathematical operations in the secondary interface. It might be possible to
-    create an immutable version of the class by removing the setters and instead
-    having all secondary methods return new points. However, this design seems more
-    inline with NaturalNumber.
+- Example Component: `NaturalNumber`
+  - **Description**: The purpose of this component is to model a non-negative
+    integer. Our intent with this design was to keep a simple kernel that
+    provides the minimum functionality needed to represent a natural number.
+    Then, we provide more complex mathematical operations in the secondary
+    interface.
   - **Kernel Methods**:
-    - `double getX()`: gets the x-coordinate of `this`
-    - `double getY()`: gets the y-coordinate of `this`
-    - `double getZ()`: gets the z-coordinate of `this`
-    - `double setX(double x)`: sets the x-coordinate of `this`
-    - `double setY(double y)`: sets the y-coordinate of `this`
-    - `double setZ(double z)`: sets the z-coordinate of `this`
+    - `void multiplyBy10(int k)`: multiplies `this` by 10 and adds `k`
+    - `int divideBy10()`: divides `this` by 10 and reports the remainder
+    - `boolean isZero()`: reports whether `this` is zero
   - **Secondary Methods**:
-    - `void translate(double x, double y, double z)`: moves `this` by translating
-      each coordinate by `x`, `y`, and `z`, respectively
-    - `void translate(Point3D p)`: moves `this` by treating `p` as a vector
-    - `void move(double x, double y, double z)`: moves `this` by overwriting each
-      coordinate with `x`, `y`, and `z`, respectively
-    - `void move(Point3D p)`: moves `this` to `p`
-    - `double distance(Point3D p)`: gives the distance between `this` and `p`
-    - `Point3D vectorTo(Point3D p)`: gives the vector from `this` to `p`
-    - `boolean isOrigin()`: returns `true` if all three coordinates are zero
+    - `void add(NaturalNumber n)`: adds `n` to `this`
+    - `void subtract(NaturalNumber n)`: subtracts `n` from `this`
+    - `void multiply(NaturalNumber n)`: multiplies `this` by `n`
+    - `NaturalNumber divide(NaturalNumber n)`: divides `this` by `n`, returning
+      the remainder
+    - ...
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, basically all OSU components have to be mutable as long as they
+        inherit from Standard. Clears, newInstance, and transferFrom all mutate
+        `this`.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+        - No. All methods work with integers or other NaturalNumbers.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+        - Yes. NaturalNumber is base 10, and we track that in a constant called
+          `RADIX`.
+    - Do your methods correctly layer on each other? Answer, explain, and give
+      at least one example:
+      - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
+        manipulate our natural number as needed. For example, to implement
+        `increment`, we can trim the last digit off with `divideBy10`, add 1 to
+        it, verify that the digit hasn't overflown, and multiply the digit back.
+        If the digit overflows, we reset it to zero and recursively call
+        `increment`.
 
 Keep in mind that the general idea when putting together these layered designs
 is to put the minimal implementation in the kernel. In this case, the kernel is
-only responsible for giving back the coordinates of the point. The secondary
-methods use these getters and setters to perform more complex operations like
-translating the point or computing the distance between two points.
+only responsible for manipulating a digit at a time in the number. The secondary
+methods use these manipulations to perform more complex operations like
+adding two numbers together.
 
 Also, keep in mind that we don't know the underlying implementation. It would be
-completely reasonable to create a `Point3D1L` class which layers the kernel on
-top of the existing `Point` class in Java. It would also be reasonable to
-implement `Point3D2` on top of three doubles and `Point3D3` on top of an array.
-Do not worry about your implementations at this time.
+completely reasonable to create a `NaturalNumber1L` class which layers the
+kernel on top of the existing `BigInteger` class in Java. It would also be
+reasonable to implement `NaturalNumber2` on top of `String` as seen in
+Project 2. Do not worry about your implementations at this time.
 
 On top of everything above, there is no expectation that you have a perfect
 design. Part of the goal of this project is to have you actually use your
