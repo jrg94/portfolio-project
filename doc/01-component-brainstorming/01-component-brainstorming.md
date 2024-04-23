@@ -262,6 +262,45 @@ will likely refine your design to make your implementation easier to use.
 The following sections detail everything that you should do once you've
 completed the assignment.
 
+### Changelog
+
+<!-- TODO: create CHANGELOG then delete this comment -->
+
+At the end of every assignment, you should update the
+[CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
+Since this is likely the first time you've done this, we would recommend
+browsing the existing file. It includes all of the changes made to the portfolio
+project template. When you're ready, you should delete this file and start your
+own. Here's what I would expect to see at the minimum:
+
+```markdown
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## YYYY.MM.DD
+
+### Added
+
+- Designed a <!-- insert name of component 1 here --> component
+- Designed a <!-- insert name of component 2 here --> component
+- Designed a <!-- insert name of component 3 here --> component
+```
+
+Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
+
+You may notice that things are nicely linked in the root CHANGELOG. If you'd
+like to accomplish that, you will need to make GitHub releases after each pull
+request merge (or at least tag your commits). This is not required.
+
+In the future, the CHANGELOG will be used to document changes in your
+designs, so we can gauge your progress. Please keep it updated at each stage
+of development.
+
 ### Submission
 
 <!-- TODO: read the submission instructions then delete this comment -->
