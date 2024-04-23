@@ -15,6 +15,9 @@ the following form: YYYY.0M.0D.
 - Updated `settings.json` to exclude certain files from markdown to PDF
   generation using `markdown-pdf.convertOnSaveExclude` setting
 - Added `/bin` to `.gitignore`, so binaries are no longer committed
+- Added the TODO tree extensions to `extensions.json`
+- Added the `todo-tree.general.showActivityBarBadge` setting to `settings.json`
+- Added the `todo-tree.tree.showCountsInTree` setting to `settings.json`
 
 ### Changed
 
@@ -23,6 +26,10 @@ the following form: YYYY.0M.0D.
   setting
 - Updated `settings.json` to organize imports automatically on save using the
   `editor.codeActionsOnSave` and `source.organizeImports` settings
+- Changed the component brainstorming assignment to ask a few clarifying
+  questions
+- Changed the component brainstorming example from `Point3D` to `NaturalNumber`
+  to avoid the getter/setter trend
 
 ### Fixed
 
