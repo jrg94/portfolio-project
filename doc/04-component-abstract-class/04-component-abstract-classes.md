@@ -47,37 +47,26 @@ methods only.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: browse the checklist then delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have shared my design changes in the "Pre-Assignment" section
-- [ ] I have created an abstract class
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have named the new Java file correctly (e.g., `NaturalNumberSecondary`)
-  - [ ] I have implemented all of the secondary methods found in the enhanced interface
-  - [ ] I have implemented all of the common methods, such as `toString()`, `equals()`, and `hashCode()`
-  - [ ] I have only used the kernel methods and/or the Standard methods in my implementations
-  - [ ] I am aware that I cannot easily test my implementations
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I have converted my abstract class to a PDF
-- [ ] I am prepared to submit both PDFs on Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
 

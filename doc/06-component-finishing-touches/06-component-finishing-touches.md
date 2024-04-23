@@ -50,47 +50,26 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: browse the checklist then delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have shared my reflection in the "Pre-Assignment" section
-- [ ] I have created a test file for my kernel implementation
-  - [ ] I have created a new Java file in `test`
-  - [ ] I have exhaustively tested all of the kernel methods
-  - [ ] I am aware that I cannot test my component against a reference implementation
-- [ ] I have created a test file for my abstract class
-  - [ ] I have created a new Java file in `test`
-  - [ ] I have exhaustively tested all of the secondary methods
-  - [ ] I am aware that I cannot test my component against a reference implementation
-- [ ] I have create a code sample demonstrating a use case of my component
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have imported and used my component in this file
-- [ ] I have create another qualitatively different code sample demonstrating a use case of my component
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have imported and used my component in this file
-- [ ] I have published my project to an open-source remote repository
-  - [ ] I have ensured that my repository is public
-  - [ ] I know the project url (e.g., https://github.com/TheRenegadeCoder/sample-programs)
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I compressed my project to a `.zip` file
-- [ ] I am prepared to submit the PDF, the zip, and the link to the remote repo to Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
 
