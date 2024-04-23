@@ -98,13 +98,11 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!--
-  TODO: briefly talk about your interests and delete this comment.
-  Also, protip: you can preview what your response looks like by hitting
-  the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-  then V. This kind of button combination is called a chord, for whatever
-  reason
--->
+<!-- TODO: briefly talk about your interests and delete this comment.
+Also, protip: you can preview what your response looks like by hitting
+the magnifying glass icon in the upper-right corner or pressing CTRL+K and
+then V. This kind of button combination is called a chord, for whatever
+reason -->
 
 ## Assignment
 
@@ -157,8 +155,8 @@ format, we can be more confident that your designs will be possible.
       `Program.Instruction`)? Answer and explain:
         - Yes. NaturalNumber is base 10, and we track that in a constant called
           `RADIX`.
-    - Do your methods correctly layer on each other? Answer, explain, and give
-      at least one example:
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
       - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
         manipulate our natural number as needed. For example, to implement
         `increment`, we can trim the last digit off with `divideBy10`, add 1 to
@@ -187,23 +185,70 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #1:
+- Component Design #1: <!-- TODO: give component a name and delete this comment -->
   - **Description**:
+    - <!-- TODO: describe your component and delete this comment -->
   - **Kernel Methods**:
+    - <!-- TODO: list kernel methods and delete this comment -->
   - **Secondary Methods**:
+    - <!-- TODO: list secondary methods and delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument and delete this comment -->
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #2:
-  - **Description**:
-  - **Kernel Methods**:
-  - **Secondary Methods**:
 
-<!-- TODO: brainstorm a component and delete this comment -->
-- Component Design #3:
+- Component Design #2: <!-- TODO: give component a name and delete this comment -->
   - **Description**:
+    - <!-- TODO: describe your component and delete this comment -->
   - **Kernel Methods**:
+    - <!-- TODO: list kernel methods and delete this comment -->
   - **Secondary Methods**:
+    - <!-- TODO: list secondary methods and delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument and delete this comment -->
+
+
+- Component Design #3: <!-- TODO: give component a name and delete this comment -->
+  - **Description**:
+    - <!-- TODO: describe your component and delete this comment -->
+  - **Kernel Methods**:
+    - <!-- TODO: list kernel methods and delete this comment -->
+  - **Secondary Methods**:
+    - <!-- TODO: list secondary methods and delete this comment -->
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - <!-- TODO: provide an argument and delete this comment -->
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - <!-- TODO: provide an argument and delete this comment -->
 
 ## Post-Assignment
 
