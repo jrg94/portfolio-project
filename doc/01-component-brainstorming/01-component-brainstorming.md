@@ -1,12 +1,12 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
+- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
+- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview and delete this comment -->
+<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +29,7 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: read this checklist and delete this comment -->
+<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +52,7 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives and delete this comment -->
+<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +67,7 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric and delete this comment -->
+<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -98,7 +98,7 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests and delete this comment.
+<!-- TODO: briefly talk about your interests then delete this comment.
 Also, protip: you can preview what your response looks like by hitting
 the magnifying glass icon in the upper-right corner or pressing CTRL+K and
 then V. This kind of button combination is called a chord, for whatever
@@ -106,11 +106,15 @@ reason -->
 
 ## Assignment
 
+<!-- TODO: read the assignment section then delete this comment -->
+
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
+
+<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -120,17 +124,20 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
+<!-- TODO: review this example component then delete this comment -->
+
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
 mirror the formatting as close as possible in your designs. By following this
 format, we can be more confident that your designs will be possible.
 
 - Example Component: `NaturalNumber`
-  - **Description**: The purpose of this component is to model a non-negative
-    integer. Our intent with this design was to keep a simple kernel that
-    provides the minimum functionality needed to represent a natural number.
-    Then, we provide more complex mathematical operations in the secondary
-    interface.
+  - **Description**:
+    - The purpose of this component is to model a non-negative
+      integer. Our intent with this design was to keep a simple kernel that
+      provides the minimum functionality needed to represent a natural number.
+      Then, we provide more complex mathematical operations in the secondary
+      interface.
   - **Kernel Methods**:
     - `void multiplyBy10(int k)`: multiplies `this` by 10 and adds `k`
     - `int divideBy10()`: divides `this` by 10 and reports the remainder
@@ -185,70 +192,70 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name and delete this comment -->
+- Component Design #1: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
-    - <!-- TODO: describe your component and delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods and delete this comment -->
+    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods and delete this comment -->
+    - <!-- TODO: list secondary methods then delete this comment -->
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
 
 
-- Component Design #2: <!-- TODO: give component a name and delete this comment -->
+- Component Design #2: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
-    - <!-- TODO: describe your component and delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods and delete this comment -->
+    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods and delete this comment -->
+    - <!-- TODO: list secondary methods then delete this comment -->
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
 
 
-- Component Design #3: <!-- TODO: give component a name and delete this comment -->
+- Component Design #3: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
-    - <!-- TODO: describe your component and delete this comment -->
+    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods and delete this comment -->
+    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods and delete this comment -->
+    - <!-- TODO: list secondary methods then delete this comment -->
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument and delete this comment -->
+      - <!-- TODO: provide an argument then delete this comment -->
 
 ## Post-Assignment
 
@@ -257,6 +264,8 @@ completed the assignment.
 
 ### Submission
 
+<!-- TODO: read the submission instructions then delete this comment -->
+
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -264,6 +273,8 @@ created for you automatically every time you save, so just double check that
 all your work is there before submitting.
 
 ### Peer Review
+
+<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -291,7 +302,7 @@ PDF to read this rubric as a table).
 > that could help you complete this assignment? Feel free to use the feedback
 > rubric above when reviewing this assignment.
 
-<!-- TODO: share your feedback here -->
+<!-- TODO: share your feedback here then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
