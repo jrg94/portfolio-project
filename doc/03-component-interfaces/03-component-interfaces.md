@@ -209,3 +209,4 @@ markdown as HTML or a PDF to read this rubric as a table).
 [pottery-fails]: https://www.youtube.com/shorts/Kqb9l113F_0?feature=share
 [natural-number-kernel]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumberKernel.html
 [natural-number]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumber.html
+[survey]: https://forms.gle/dumXHo6A4Enucdkq9
