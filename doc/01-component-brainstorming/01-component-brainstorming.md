@@ -2,7 +2,7 @@
 
 - **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
 - **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
 
@@ -153,8 +153,8 @@ format, we can be more confident that your designs will be possible.
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, basically all OSU components have to be mutable as long as they
-        inherit from Standard. Clears, newInstance, and transferFrom all mutate
-        `this`.
+        inherit from Standard. `clear`, `newInstance`, and `transferFrom` all
+        mutate `this`.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
         - No. All methods work with integers or other NaturalNumbers.
