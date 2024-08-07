@@ -90,7 +90,10 @@ do good work.
    to acknowledge the growth and development of your work. Therefore, you must
    show what has been changed following the proof-of-concept as it pertains
    to the interface design.
-2. (4 points) Both interfaces must include full documentation for all method
+2. (2 points) To ensure you have a conceptual understanding of the kernel
+   and enhanced interfaces as well as how they fit in the larger picture,
+   you must include a hierarchy diagram for your component.
+3. (4 points) Both interfaces must include full documentation for all method
    headers. Documentation must meet the bare minimum expectations for JUnit,
    which means including `@param` for every parameter and `@return` for every
    return type. Documentation must also meet the bare minimum expectations
@@ -98,39 +101,48 @@ do good work.
    other aspects of contracts should be included where applicable, such as
    `@requires`, `@replaces`, `@clears`, and `@updates`. There is no requirement
    to use mathematical notation in your contracts.
-3. (2 points) The kernel interface must, at the very least, inherit from
+4. (2 points) The kernel interface must, at the very least, inherit from
    `Standard` and compile. In addition, it must contain a handful of minimally
    viable method headers (i.e., the minimum number of methods needed to model
    the data type). Do not include fields or method implementations. However, you
    may include any nested interfaces needed for your data type. You may also
-   include constants that may be helpful throughout the design.
-4. (2 points) The enhanced interface must, at the very least, inherit from
-   the kernel interface and compile. In addition, it may contain as many method
-   headers as you would like, but the methods must be able to be implemented by
-   the kernel and `Standard` methods. Again, do not include any method
-   implementations or fields at this point.
+   include constants that may be helpful throughout the design. Similarly, the
+   enhanced interface must, at the very least, inherit from the kernel interface
+   and compile. In addition, it may contain as many method headers as you would
+   like, but the methods must be able to be implemented by the kernel and
+   `Standard` methods. Again, do not include any method implementations or
+   fields at this point.
 
 ## Pre-Assignment Tasks
 
-> To start making your interfaces, make a branch off of main in your new repo
-> called something like `interfaces`. There are many ways to do this, but my
-> preference is to use GitHub Desktop. From there, you can click the `Branch`
-> tab, select `New branch`, and name your new branch. Alternatively, VSCode has
-> its own GUI for git. You can also make use of the command line directly in
-> VSCode to run git commands. It's entirely up to you. Regardless of your choice,
-> we'll want a branch that you can later make a pull request from with all
-> your changes.
->
-> **Note**: because you may have changes still sitting in a pull request,
-> you'll want to make this new branch directly from main. This may seem weird
-> because you won't be able to see the other parts (e.g., your proof of concept)
-> in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
-> together later. However, this does mean that you may be waiting for a pull
-> request to see if your different features fit together. Once the pull request
-> merges, you will need to pull the changes from main into your current branch
-> to see them. If you don't like this workflow, you may try following the
-> rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
-> and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
+Before you start crafting your interfaces, you must demonstrate that you know
+how everything fits in the discipline hierarchy. You have seen many of these
+diagrams already, so you should be able to draw one. Feel free to make a
+hierarchy diagram using whatever tools you would like. Then, include a picture
+of it in this folder. You may also embed it just below using markdown syntax
+(i.e., `[ALT TEXT](path/to/file)`).
+
+<!-- TODO: make a diagram of your component hierarchy then delete this comment -->
+
+To start making your interfaces, make a branch off of main in your new repo
+called something like `interfaces`. There are many ways to do this, but my
+preference is to use GitHub Desktop. From there, you can click the `Branch`
+tab, select `New branch`, and name your new branch. Alternatively, VSCode has
+its own GUI for git. You can also make use of the command line directly in
+VSCode to run git commands. It's entirely up to you. Regardless of your choice,
+we'll want a branch that you can later make a pull request from with all
+your changes.
+
+**Note**: because you may have changes still sitting in a pull request,
+you'll want to make this new branch directly from main. This may seem weird
+because you won't be able to see the other parts (e.g., your proof of concept)
+in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
+together later. However, this does mean that you may be waiting for a pull
+request to see if your different features fit together. Once the pull request
+merges, you will need to pull the changes from main into your current branch
+to see them. If you don't like this workflow, you may try following the
+rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
+and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
 <!-- TODO: make a new branch from main then delete this comment -->
 
