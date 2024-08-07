@@ -93,6 +93,11 @@ do good work.
 
 ## Pre-Assignment Tasks
 
+Unlike previous assignments, the pre-assignment is somewhat in depth. Please
+take your time to go through it. This will set you up for long term success.
+
+### Discuss Choice of Design
+
 > Because choosing a design to use moving forward may present a challenge, it
 > may be a good idea to just pick one for now. There is nothing wrong with
 > creating a couple interfaces that you will scrap later. Think of this as the
@@ -108,6 +113,56 @@ do good work.
 
 <!-- TODO: briefly argue your choice of design or design something
 new; then delete this comment -->
+
+### Setup Git and GitHub
+
+<!-- TODO: follow the instructions below then delete this comment -->
+
+Hopefully, at this point, you have some git experience. Therefore, here's what I
+would recommend you do.
+
+1. Create a [GitHub](https://github.com/) account, if you have not already.
+2. Download [GitHub Desktop](https://desktop.github.com/download/), if you have
+   not already.
+3. Sign into GitHub Desktop using your GitHub account.
+4. In GitHub Desktop, click `File` and `New Repository`.
+5. Choose a name based on the component you decided above. Don't worry! This
+   can be changed at any time. I recommend using lowercase letters and separating
+   by dashes (e.g., `my-component`), but any format is fine.
+6. Give a short description (i.e. one sentence) of your component.
+7. Select a location on your computer where you want to keep your project.
+   Do not make this the path to your existing portfolio project. We are just
+   going to copy the files over.
+8. Leave everything else blank and click "Create repository".
+
+This will create a folder on your computer that is ready to be a git repo.
+Next:
+
+9. You should see multiple buttons that say "Publish repository". Click one of
+   them.
+10. A window will pop up asking you to confirm the repo name and description.
+    In addition, there will be an option to "Keep this code private". **Uncheck
+    this setting**, so I can access your code during submissions. Ignore the
+    organization setting.
+11. Click `Publish repository`.
+
+Now, you need to move our existing work into the repo. To do this, you will
+need to figure out where your portfolio project is current stored. Then:
+
+12. Go inside the folder and copy everything. I would use `CTRL + A` (or the
+    Mac equivalent) to select all the files. Then, I would use `CTRL + C` to
+    copy them.
+13. Next, go to where you stored the repo. If you don't know where this is,
+    GitHub Desktop can tell you. Click the "Repository" tab and select
+    "Show in Explorer" (or the Mac equivalent). Alternatively, you can use
+    the shortcut `CTRL + SHIFT + F`.
+14. Then, dump everything in this folder by pasting or using `CTRL + V` (or the
+    Mac equivalent).
+15. When you jump back into GitHub Desktop, you should see a lot of changes as
+    follows:
+
+![GitHub Desktop With Changes](github-desktop-with-changes.png)
+
 
 ## Assignment Tasks
 
@@ -132,6 +187,41 @@ coding. See the submission directions below when you're ready to submit.
 The following sections detail everything that you should do once you've
 completed the assignment.
 
+### Changelog
+
+<!-- TODO: update CHANGELOG then delete this comment -->
+
+At the end of every assignment, you should update the
+[CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
+Here's what I would expect to see at the minimum:
+
+```markdown
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## YYYY.MM.DD
+
+### Added
+
+- Designed a proof of concept for <!-- insert name of component 1 here --> component
+
+### Updated
+
+- Changed design to include ...
+
+```
+
+Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
+
+You may notice that things are nicely linked in the root CHANGELOG. If you'd
+like to accomplish that, you will need to make GitHub releases after each pull
+request merge (or at least tag your commits). This is not required.
+
 ### Submission
 
 <!-- TODO: read the submission instructions then delete this comment -->
@@ -142,7 +232,13 @@ your changes. Pull requests are pretty easy to make if you're using GitHub
 Desktop. Just click the `branch` tab and select `Create pull request`. This
 should pull up your browser with the pull request form ready to complete. Give
 your pull request a good title like "Completed Part 2 of the Portfolio Project"
-and briefly describe what you've done.
+and briefly describe what you've done. Then, click "Create pull request".
+
+If all goes well, you should have a pull request that you can submit to Carmen
+via its URL. The URL should be in the form:
+`https://github.com/username/repo-name/pull/#`
+
+<!-- TODO: paste the URL to Carmen then delete this comment -->
 
 ### Peer Review
 
