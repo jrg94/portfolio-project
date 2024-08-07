@@ -161,8 +161,34 @@ need to figure out where your portfolio project is current stored. Then:
 15. When you jump back into GitHub Desktop, you should see a lot of changes as
     follows:
 
-![GitHub Desktop With Changes](github-desktop-with-changes.png)
+![GitHub Desktop With Changes](../../assets/github-desktop-with-changes.png)
 
+To confirm everything is working properly, you can open the repo now in VSCode
+by going to "Repository" tab and clicking "Open in VSCode". Alternatively,
+you can use the shortcut `CTRL + SHIFT + A`. You should be greeted with a repo
+that looks as follows:
+
+![VSCode on Startup](../../assets/vscode-init.png)
+
+Note that files like `README.md` and `.gitignore` should be at the root of
+the repo. If they are not, you made a mistake. Now, there's only a few things
+left to do:
+
+16. Go back to GitHub Desktop and write a commit message in the "Summary" box.
+    It should say something like "Added all required files".
+17. Click "Commit to main" under your commit message. Now, all your files are
+    saved locally.
+18. Click "Push origin" near the top of the window. This pushes the files to
+    GitHub.
+19. Now, before you can get started on your proof of concept, you need to create
+    a branch. To do this, click the "Branch" tab and select "New branch".
+20. You will be prompted for a name of your branch. You can select whatever you
+    like, but I think `proof-of-concept` is fine.
+21. Then, you should be able to select "Create branch", and you will be
+    automatically swapped to it. At that point, you can begin your proof of
+    concept.
+
+Congrats! You just setup your own repository.
 
 ## Assignment Tasks
 
