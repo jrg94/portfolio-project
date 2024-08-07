@@ -112,11 +112,27 @@ do good work.
 
 ## Pre-Assignment Tasks
 
-> At this point, you should just be writing some code. However, as a part of
-> getting into the habit of documenting your work, use this space to document
-> any changes you've made to your designs and why.
+> To start making your interfaces, make a branch off of main in your new repo
+> called something like `interfaces`. There are many ways to do this, but my
+> preference is to use GitHub Desktop. From there, you can click the `Branch`
+> tab, select `New branch`, and name your new branch. Alternatively, VSCode has
+> its own GUI for git. You can also make use of the command line directly in
+> VSCode to run git commands. It's entirely up to you. Regardless of your choice,
+> we'll want a branch that you can later make a pull request from with all
+> your changes.
+>
+> **Note**: because you may have changes still sitting in a pull request,
+> you'll want to make this new branch directly from main. This may seem weird
+> because you won't be able to see the other parts (e.g., your proof of concept)
+> in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
+> together later. However, this does mean that you may be waiting for a pull
+> request to see if your different features fit together. Once the pull request
+> merges, you will need to pull the changes from main into your current branch
+> to see them. If you don't like this workflow, you may try following the
+> rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
+> and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-<!-- TODO: document changes -->
+<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -139,16 +155,28 @@ completed the assignment.
 
 ### Submission
 
-If you have completed the assignment using this template, we recommend that you
-convert it to a PDF before submission. If you're not sure how, check out
-this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
-created for you automatically every time you save, so just double check that
-all your work is there before submitting.
+<!-- TODO: read the submission instructions then delete this comment -->
 
-In addition, the Java files you created should be submitted separately as PDFs.
-This template includes the print to PDF extension, so you should be able to
-click the print icon in the top right of this panel. In any case, do not copy
-the Java code into this file.
+Assuming that your project is in a GitHub repo somewhere and your changes are on
+a proof-of-concept branch, then what we'll want you to do is create a pull
+request of all your changes. Pull requests are pretty easy to make if you're
+using GitHub Desktop. Just click the `Branch` tab and select
+`Create pull request`. This should pull up your browser with the pull request
+form ready to complete. Give your pull request a good title like "Completed Part
+3 of the Portfolio Project" and briefly describe what you've done. Then, click
+"Create pull request".
+
+If all goes well, you should have a pull request that you can submit to Carmen
+via its URL. The URL should be in the form:
+`https://github.com/username/repo-name/pull/#`
+
+**Note**: you are the owner of the repo, so you are not required to wait for
+feedback before merging. After all, the main purpose of the pull request is to
+put all your changes in once place for a code review. However, I highly
+recommend keeping the pull request open until at least a peer has had a chance
+to look over your changes. Otherwise, you defer needed changes to later pull
+requests, which could sacrifice the overall quality of your work or result in
+major rework.
 
 ### Peer Review
 
