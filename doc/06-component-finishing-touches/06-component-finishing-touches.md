@@ -96,77 +96,17 @@ do good work.
    kernel, and secondary methods. The format of testing will be different from
    the style used in the course because it is unlikely that you will have an
    existing component to test against (more on this below).
-2. (15 points) There must be at least two different sample codes provided that
+2. (20 points) There must be at least two different sample codes provided that
    show how the component might be used. For example, consider how `XMLTree`
    was used to create the `RSSReader` and the `RSSAggregator`. There is no
    expectation that you provide samples to this much depth, but two files
    with at least a main method would be excellent.
-3. (5 points) The complete package (and ideally just the entire portfolio
-   project directly) must be committed to some open-source software repository,
-   such as GitHub. Appropriate efforts should be made to make the remote
-   repository easy to navigate and explore, such as by overwriting the root
-   README with details about your project.
-4. (15 points) As you work through these finishing touches, take a moment to
+3. (15 points) As you work through these finishing touches, take a moment to
    reflect on the software development process. There are reflection prompts
    below. You should also reflect on your growth as a developer and share
    details about what you've learned.
 
 ## Pre-Assignment Tasks
-
-Now that you have created a software component from scratch, it's time to
-reflect on that process as well as take some time to think about your
-growth as a developer. Below, you will find a series of reflection prompts.
-Take some time to fill them out honestly.
-
-### Software Development
-
-> A common gripe that students express is how much they feel the work they do
-> in class fails to map to the real world. Now that you've had a chance to
-> complete the portfolio project, how much better (or worse) do you think you
-> understand software development and why?
-
-<!-- TODO: discuss -->
-
-> Also, did the portfolio project surface any gaps in your own knowledge of
-> software development. If so, what are those gaps and how did you address them?
-
-<!-- TODO: discuss -->
-
-> Finally, as a part of completing the portfolio project, to what extent has
-> your perspective of software development changed, if at all? In other words,
-> is software development something you still enjoy? If not, why not?
-
-<!-- TODO: discuss -->
-
-### Personal Growth
-
-> One of the challenges of completing the portfolio project is picking up a lot
-> of skills on your own. Some of these skills are, of course, software skills.
-> However, there are plenty of other skills you may have picked up through
-> this process. Therefore, the first question is what skills did you pick up
-> through this process?
-
-<!-- TODO: discuss -->
-
-> The follow-up question is: could you rephrase these skills you picked up
-> as bullet points that you could put on a resume? Try it below.
-
-<!-- TODO: discuss -->
-
-> Next, how has working on this project affected your career trajectory?
-> In other words, do you now hate the topic you picked? Or, are you even more
-> interested in it? Both outcomes are valuable to your personal development.
-
-<!-- TODO: discuss -->
-
-> Finally, consider the skills you've picked up and your current career
-> trajectory. What are some things you could do to continue on your
-> career trajectory? Also, who are some mentors you could contact to help
-> you stay on your path?
-
-<!-- TODO: discuss -->
-
-### Pull Request
 
 > To finish your component, make a branch off of main in your new repo called
 > something like `finishing-touches`. There are many ways to do this, but my
@@ -265,90 +205,61 @@ public class Square {
 }
 ```
 
-### Publishing
-
-Hopefully, you've already been working out of version control software this
-entire semester. However, if you have not, the last step would be getting
-the project committed to an open-source repository, such as GitHub. Before
-submission, I would recommend that your repo looks something like the following:
-
-```
-│   .gitattributes
-│   .gitignore
-│   LICENSE
-│   README.md
-│
-├───.vscode
-│       extensions.json
-│       osu-cse-checkstyle-config.xml
-│       osu-cse-formatter.xml
-│       settings.json
-│
-├───doc
-│   │   README.md
-│   │
-│   ├───01-component-brainstorming
-│   │       01-component-brainstorming.md
-│   │
-│   ├───02-component-proof-of-concept
-│   │       02-component-proof-of-concept.md
-│   │
-│   ├───03-component-interfaces
-│   │       03-component-interfaces.md
-│   │
-│   ├───04-component-abstract-class
-│   │       04-component-abstract-classes.md
-│   │
-│   ├───05-component-kernel-implementation
-│   │       05-component-kernel-implementation.md
-│   │
-│   └───06-component-finishing-touches
-│           06-component-finishing-touches.md
-│
-├───lib
-│       components.jar
-│       hamcrest-core-1.3.jar
-│       junit-4.13.2.jar
-│       README.md
-│
-├───src
-│   │   Point3DDemo.java
-│   │   README.md
-│   │   Square.java
-│   │
-│   └───components
-│       └───geometry
-│           └───point
-│                   Point3D.java
-│                   Point3D1.java
-│                   Point3DKernel.java
-│                   Point3DSecondary.java
-│
-└───test
-    │   README.md
-    │
-    └───components
-        └───geometry
-            └───point
-                    Point3D1Test.java
-                    Point3DTest.java
-```
-
-There is no correct directory structure, but something like this will make it
-easier for others to browse.
-
-At any rate, once you're ready to commit, I would run a `git init` from the
-portfolio root. Then, you can make use of whatever tools you want to get the
-code to your remote server of choice. For example, you might follow up the
-`git init` with a `git add .` and `git commit -m "Finalized my project"`.
-At that point, you might use a tool like GitHub desktop to publish the repo
-for you to GitHub. Otherwise, you have to do a bit more manual labor. In any
-case, I trust that you can figure it out!
-
 ## Post-Assignment Tasks
 
 The following sections detail everything that you should do once you've
 completed the assignment.
+
+### Reflection
+
+Now that you have created a software component from scratch, it's time to
+reflect on that process as well as take some time to think about your
+growth as a developer. Below, you will find a series of reflection prompts.
+Take some time to fill them out honestly.
+
+> A common gripe that students express is how much they feel the work they do
+> in class fails to map to the real world. Now that you've had a chance to
+> complete the portfolio project, how much better (or worse) do you think you
+> understand software development and why?
+
+<!-- TODO: discuss -->
+
+> Also, did the portfolio project surface any gaps in your own knowledge of
+> software development. If so, what are those gaps and how did you address them?
+
+<!-- TODO: discuss -->
+
+> Finally, as a part of completing the portfolio project, to what extent has
+> your perspective of software development changed, if at all? In other words,
+> is software development something you still enjoy? If not, why not?
+
+<!-- TODO: discuss -->
+
+> One of the challenges of completing the portfolio project is picking up a lot
+> of skills on your own. Some of these skills are, of course, software skills.
+> However, there are plenty of other skills you may have picked up through
+> this process. Therefore, the first question is what skills did you pick up
+> through this process?
+
+<!-- TODO: discuss -->
+
+> The follow-up question is: could you rephrase these skills you picked up
+> as bullet points that you could put on a resume? Try it below.
+
+<!-- TODO: discuss -->
+
+> Next, how has working on this project affected your career trajectory?
+> In other words, do you now hate the topic you picked? Or, are you even more
+> interested in it? Both outcomes are valuable to your personal development.
+
+<!-- TODO: discuss -->
+
+> Finally, consider the skills you've picked up and your current career
+> trajectory. What are some things you could do to continue on your
+> career trajectory? Also, who are some mentors you could contact to help
+> you stay on your path?
+
+<!-- TODO: discuss -->
 
 ### Submission
 
