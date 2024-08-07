@@ -93,11 +93,6 @@ do good work.
 
 ## Pre-Assignment Tasks
 
-Unlike previous assignments, the pre-assignment is somewhat in depth. Please
-take your time to go through it. This will set you up for long term success.
-
-### Discuss Choice of Design
-
 > Because choosing a design to use moving forward may present a challenge, it
 > may be a good idea to just pick one for now. There is nothing wrong with
 > creating a couple interfaces that you will scrap later. Think of this as the
@@ -114,81 +109,16 @@ take your time to go through it. This will set you up for long term success.
 <!-- TODO: briefly argue your choice of design or design something
 new; then delete this comment -->
 
-### Setup Git and GitHub
+> Once you've argued your choice of design, make a branch in your new repo called
+> something like `proof-of-concept`. There are many ways to do this, but my
+> preference is to use GitHub Desktop. From there, you can click the "Branch"
+> tab, select "New branch", and name your new branch. Alternatively, VSCode has
+> its own GUI for git. You can also make use of the command line directly in
+> VSCode to run git commands. It's entirely up to you. Regardless of your choice,
+> we'll want a branch that you can later make a pull request from with all
+> your changes.
 
-<!-- TODO: follow the instructions below then delete this comment -->
-
-Hopefully, at this point, you have some git experience. Therefore, here's what I
-would recommend you do.
-
-1. Create a [GitHub](https://github.com/) account, if you have not already.
-2. Download [GitHub Desktop](https://desktop.github.com/download/), if you have
-   not already.
-3. Sign into GitHub Desktop using your GitHub account.
-4. In GitHub Desktop, click `File` and `New Repository`.
-5. Choose a name based on the component you decided above. Don't worry! This
-   can be changed at any time. I recommend using lowercase letters and separating
-   by dashes (e.g., `my-component`), but any format is fine.
-6. Give a short description (i.e. one sentence) of your component.
-7. Select a location on your computer where you want to keep your project.
-   Do not make this the path to your existing portfolio project. We are just
-   going to copy the files over.
-8. Leave everything else blank and click "Create repository".
-
-This will create a folder on your computer that is ready to be a git repo.
-Next:
-
-9. You should see multiple buttons that say "Publish repository". Click one of
-   them.
-10. A window will pop up asking you to confirm the repo name and description.
-    In addition, there will be an option to "Keep this code private". **Uncheck
-    this setting**, so I can access your code during submissions. Ignore the
-    organization setting.
-11. Click `Publish repository`.
-
-Now, you need to move our existing work into the repo. To do this, you will
-need to figure out where your portfolio project is current stored. Then:
-
-12. Go inside the folder and copy everything. I would use `CTRL + A` (or the
-    Mac equivalent) to select all the files. Then, I would use `CTRL + C` to
-    copy them.
-13. Next, go to where you stored the repo. If you don't know where this is,
-    GitHub Desktop can tell you. Click the "Repository" tab and select
-    "Show in Explorer" (or the Mac equivalent). Alternatively, you can use
-    the shortcut `CTRL + SHIFT + F`.
-14. Then, dump everything in this folder by pasting or using `CTRL + V` (or the
-    Mac equivalent).
-15. When you jump back into GitHub Desktop, you should see a lot of changes as
-    follows:
-
-![GitHub Desktop With Changes](../../assets/github-desktop-with-changes.png)
-
-To confirm everything is working properly, you can open the repo now in VSCode
-by going to "Repository" tab and clicking "Open in VSCode". Alternatively,
-you can use the shortcut `CTRL + SHIFT + A`. You should be greeted with a repo
-that looks as follows:
-
-![VSCode on Startup](../../assets/vscode-init.png)
-
-Note that files like `README.md` and `.gitignore` should be at the root of
-the repo. If they are not, you made a mistake. Now, there's only a few things
-left to do:
-
-16. Go back to GitHub Desktop and write a commit message in the "Summary" box.
-    It should say something like "Added all required files".
-17. Click "Commit to main" under your commit message. Now, all your files are
-    saved locally.
-18. Click "Push origin" near the top of the window. This pushes the files to
-    GitHub.
-19. Now, before you can get started on your proof of concept, you need to create
-    a branch. To do this, click the "Branch" tab and select "New branch".
-20. You will be prompted for a name of your branch. You can select whatever you
-    like, but I think `proof-of-concept` is fine.
-21. Then, you should be able to select "Create branch", and you will be
-    automatically swapped to it. At that point, you can begin your proof of
-    concept.
-
-Congrats! You just setup your own repository.
+<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
