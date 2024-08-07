@@ -15,6 +15,7 @@ the following form: YYYY.0M.0D.
 - Added the `todo-tree.general.showActivityBarBadge` setting to `settings.json`
 - Added the `todo-tree.tree.showCountsInTree` setting to `settings.json`
 - Added the VSCode PDF extension to `extensions.json`
+- Added `java.debug.settings.vmArgs` setting to enable assertions (i.e., `-ea`)
 
 ### Changed
 

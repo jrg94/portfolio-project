@@ -12,7 +12,9 @@
     "files.trimTrailingWhitespace": true,
     "markdown-pdf.convertOnSave": true,
     "markdown-pdf.convertOnSaveExclude": [
-        "README.md"
+        "CHANGELOG.md",
+        "README.md",
+        "HELPME.md"
     ],
     "markdown-pdf.format": "Letter",
     "markdown-pdf.outputDirectory": "",
@@ -35,5 +37,6 @@
     "java.cleanup.actions": [
         "qualifyMembers",
         "addOverride"
-    ]
+    ],
+    "java.debug.settings.vmArgs": "-ea"
 }
