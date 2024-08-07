@@ -85,18 +85,16 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric
 
-Again, to be completely transparent, most of the portfolio project, except the
-final submission, is designed as a formative assessment. Formative assessments
-are meant to provide ongoing feedback in the learning process. Therefore,
-the rubric is designed to assess the learning objectives *directly* in a way
-that is low stakes—meaning you shouldn't have to worry about the grade. Just
-do good work.
+Unlike previous parts of the portfolio project, in this part of the project,
+you'll receive a summative assessment, which usually involves a more critical
+lens. In other words, at this stage, we're expecting you to demonstrate some
+mastery of the material. See the rubric items for specifics.
 
 1. (15 points) All component methods must be tested including the Standard,
    kernel, and secondary methods. The format of testing will be different from
    the style used in the course because it is unlikely that you will have an
    existing component to test against (more on this below).
-2. (20 points) There must be at least two different sample codes provided that
+2. (10 points) There must be at least two different sample codes provided that
    show how the component might be used. For example, consider how `XMLTree`
    was used to create the `RSSReader` and the `RSSAggregator`. There is no
    expectation that you provide samples to this much depth, but two files
@@ -105,6 +103,12 @@ do good work.
    reflect on the software development process. There are reflection prompts
    below. You should also reflect on your growth as a developer and share
    details about what you've learned.
+4. (10 points) The overall component must exhibit a high level of polish.
+   Because all previous parts of this assignment are meant to be formative,
+   assessments were generally charitable. In this phase, you should submit
+   a component as if you were a professional software engineer. Follow good
+   practices like using good variable names, documenting your methods, and
+   overall adhering to the discipline.
 
 ## Pre-Assignment Tasks
 
