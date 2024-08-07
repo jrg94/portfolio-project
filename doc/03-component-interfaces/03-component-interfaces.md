@@ -43,51 +43,26 @@ proof-of-concept, you should be able to answer this question to some extent.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: browse the checklist then delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have shared my design changes in the "Pre-Assignment" section
-- [ ] I have created a kernel interface
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have named the new Java file correctly (e.g., `NaturalNumberKernel`)
-  - [ ] I have included all of my kernel methods as method headers only
-  - [ ] I have written contracts for every single kernel method
-    - [ ] I have included an `@ensures` in every single kernel method
-    - [ ] I have included an `@requires` for every precondition, when applicable
-    - [ ] I have included an `@param` for every single parameter
-    - [ ] I have included an `@return` for every method with a return type
-    - [ ] I have included parameter modes where applicable
-- [ ] I have created an enhanced interface
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have named the new Java file correctly (e.g., `NaturalNumber`)
-  - [ ] I have included all of my secondary methods as method headers only
-  - [ ] I have written contracts for every single secondary method
-    - [ ] I have included an `@ensures` in every single secondary method
-    - [ ] I have included an `@requires` for every precondition, when applicable
-    - [ ] I have included an `@param` for every single parameter
-    - [ ] I have included an `@return` for every method with a return type
-    - [ ] I have included parameter modes where applicable
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I have converted my kernel interface to a PDF
-- [ ] I have converted my enhanced interface to a PDF
-- [ ] I am prepared to submit all three PDFs on Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
 

@@ -5,7 +5,8 @@
         "vscjava.vscode-java-pack", // General Java startup extension pack
         "pdconsec.vscode-print", // Code printing to PDF extension
         "shengchen.vscode-checkstyle", // Java CheckStyle extension
-        "gruntfuggly.todo-tree" // todo view extension
+        "gruntfuggly.todo-tree", // todo view extension
+        "tomoki1207.pdf", // PDF rendering extension
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
     "unwantedRecommendations": []

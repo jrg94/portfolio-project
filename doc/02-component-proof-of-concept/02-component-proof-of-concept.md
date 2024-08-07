@@ -1,10 +1,12 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
+- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
+- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
+
+<!-- TODO: read the assignment overview then delete this comment -->
 
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is
@@ -28,37 +30,30 @@ the more work you can put in now, the better.
 
 ## Assignment Checklist
 
-Because these documents are long and full of text, you will be supplied with
-a quick overview of what you need to do to get the assignment done as follows:
+<!-- TODO: browse the checklist then delete this comment -->
 
-### Getting Started Tasks
+To be sure you have completed everything on this assignment, we have littered
+this document with TODO comments. You can browse all of them in VSCode by
+opening the TODOs window from the sidebar. The icon looks like a tree and will
+likely have a large number next to it indicating the number of TODOS. You'll
+chip away at that number over the course of the semester. However, if you'd
+like to remove this number, you can disable it by removing the following
+line from the `settings.json` file:
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+```json
+"todo-tree.general.showActivityBarBadge": true,
+```
 
-### Ongoing Tasks
+Which is not to be confused with the following setting that adds the counts
+to the tree diagram (you may remove this one as well):
 
-- [ ] I have expressed my choice of design and why in the "Pre-Assignment" section
-- [ ] I have created a proof-of-concept of my design
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have defined my representation using a field or fields
-  - [ ] I have implemented a few methods from my design
-  - [ ] I have shown that the methods work through a main method
-
-### Submission Tasks
-
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I have converted my Java code to a PDF
-- [ ] I am prepared to submit both PDFs on Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+```json
+"todo-tree.tree.showCountsInTree": true,
+```
 
 ## Assignment Learning Objectives
+
+<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -72,6 +67,8 @@ project. Specifically, students should be able to:
 3. Assemble a minimal working implementation of one of their designs
 
 ## Assignment Rubric: 10 Points
+
+<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments

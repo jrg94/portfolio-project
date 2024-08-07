@@ -13,7 +13,8 @@
     "markdown-pdf.convertOnSave": true,
     "markdown-pdf.convertOnSaveExclude": [
         "CHANGELOG.md",
-        "README.md"
+        "README.md",
+        "HELPME.md"
     ],
     "markdown-pdf.format": "Letter",
     "markdown-pdf.outputDirectory": "",
@@ -36,5 +37,6 @@
     "java.cleanup.actions": [
         "qualifyMembers",
         "addOverride"
-    ]
+    ],
+    "java.debug.settings.vmArgs": "-ea"
 }
