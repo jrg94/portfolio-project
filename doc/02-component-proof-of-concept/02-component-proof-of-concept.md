@@ -134,16 +134,15 @@ completed the assignment.
 
 ### Submission
 
-If you have completed the assignment using this template, we recommend that
-you convert it to a PDF before submission. If you're not sure how, check out
-this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
-created for you automatically every time you save, so just double check that
-all your work is there before submitting.
+<!-- TODO: read the submission instructions then delete this comment -->
 
-In addition, the Java file you created should be submitted separately as a PDF.
-This template includes the print to PDf extension, so you should be able to
-click the print icon in the top right of this panel. In any case, do not copy
-the Java code into this file.
+Assuming that your project is in a GitHub repo somewhere and your changes are on
+a part-2 branch, then what we'll want you to do is create a pull request of all
+your changes. Pull requests are pretty easy to make if you're using GitHub
+Desktop. Just click the `branch` tab and select `Create pull request`. This
+should pull up your browser with the pull request form ready to complete. Give
+your pull request a good title like "Completed Part 2 of the Portfolio Project"
+and briefly describe what you've done.
 
 ### Peer Review
 
