@@ -93,7 +93,7 @@ do good work.
 2. (2 points) To ensure you have a conceptual understanding of the kernel
    and enhanced interfaces as well as how they fit in the larger picture,
    you must include a hierarchy diagram for your component.
-3. (4 points) Both interfaces must include full documentation for all method
+3. (3 points) Both interfaces must include full documentation for all method
    headers. Documentation must meet the bare minimum expectations for JUnit,
    which means including `@param` for every parameter and `@return` for every
    return type. Documentation must also meet the bare minimum expectations
@@ -101,7 +101,7 @@ do good work.
    other aspects of contracts should be included where applicable, such as
    `@requires`, `@replaces`, `@clears`, and `@updates`. There is no requirement
    to use mathematical notation in your contracts.
-4. (2 points) The kernel interface must, at the very least, inherit from
+4. (3 points) The kernel interface must, at the very least, inherit from
    `Standard` and compile. In addition, it must contain a handful of minimally
    viable method headers (i.e., the minimum number of methods needed to model
    the data type). Do not include fields or method implementations. However, you
