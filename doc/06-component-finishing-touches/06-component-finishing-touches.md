@@ -108,25 +108,25 @@ do good work.
 
 ## Pre-Assignment Tasks
 
-> To finish your component, make a branch off of main in your new repo called
-> something like `finishing-touches`. There are many ways to do this, but my
-> preference is to use GitHub Desktop. From there, you can click the `Branch`
-> tab, select `New branch`, and name your new branch. Alternatively, VSCode has
-> its own GUI for git. You can also make use of the command line directly in
-> VSCode to run git commands. It's entirely up to you. Regardless of your choice,
-> we'll want a branch that you can later make a pull request from with all
-> your changes.
->
-> **Note**: because you may have changes still sitting in a pull request,
-> you'll want to make this new branch directly from main. This may seem weird
-> because you won't be able to see the other parts (e.g., your proof of concept)
-> in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
-> together later. However, this does mean that you may be waiting for a pull
-> request to see if your different features fit together. Once the pull request
-> merges, you will need to pull the changes from main into your current branch
-> to see them. If you don't like this workflow, you may try following the
-> rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
-> and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
+To finish your component, make a branch off of main in your new repo called
+something like `finishing-touches`. There are many ways to do this, but my
+preference is to use GitHub Desktop. From there, you can click the `Branch`
+tab, select `New branch`, and name your new branch. Alternatively, VSCode has
+its own GUI for git. You can also make use of the command line directly in
+VSCode to run git commands. It's entirely up to you. Regardless of your choice,
+we'll want a branch that you can later make a pull request from with all
+your changes.
+
+**Note**: because you may have changes still sitting in a pull request,
+you'll want to make this new branch directly from main. This may seem weird
+because you won't be able to see the other parts (e.g., your proof of concept)
+in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
+together later. However, this does mean that you may be waiting for a pull
+request to see if your different features fit together. Once the pull request
+merges, you will need to pull the changes from main into your current branch
+to see them. If you don't like this workflow, you may try following the
+rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
+and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
 <!-- TODO: make a new branch from main then delete this comment -->
 
