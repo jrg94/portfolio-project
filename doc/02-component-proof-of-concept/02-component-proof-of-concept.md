@@ -111,8 +111,8 @@ new; then delete this comment -->
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
-> preference is to use GitHub Desktop. From there, you can click the "Branch"
-> tab, select "New branch", and name your new branch. Alternatively, VSCode has
+> preference is to use GitHub Desktop. From there, you can click the `Branch`
+> tab, select `New branch`, and name your new branch. Alternatively, VSCode has
 > its own GUI for git. You can also make use of the command line directly in
 > VSCode to run git commands. It's entirely up to you. Regardless of your choice,
 > we'll want a branch that you can later make a pull request from with all
@@ -183,12 +183,13 @@ request merge (or at least tag your commits). This is not required.
 <!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
-a part-2 branch, then what we'll want you to do is create a pull request of all
-your changes. Pull requests are pretty easy to make if you're using GitHub
-Desktop. Just click the `branch` tab and select `Create pull request`. This
-should pull up your browser with the pull request form ready to complete. Give
-your pull request a good title like "Completed Part 2 of the Portfolio Project"
-and briefly describe what you've done. Then, click "Create pull request".
+a proof-of-concept branch, then what we'll want you to do is create a pull
+request of all your changes. Pull requests are pretty easy to make if you're
+using GitHub Desktop. Just click the `Branch` tab and select
+`Create pull request`. This should pull up your browser with the pull request
+form ready to complete. Give your pull request a good title like "Completed Part
+2 of the Portfolio Project" and briefly describe what you've done. Then, click
+"Create pull request".
 
 If all goes well, you should have a pull request that you can submit to Carmen
 via its URL. The URL should be in the form:
