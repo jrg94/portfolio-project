@@ -50,6 +50,7 @@ the following form: YYYY.0M.0D.
 ### Removed
 
 - Removed `java.saveActions.organizeImports` setting from `settings.json`
+- Removed references to `Point3D` completely
 
 ## [2024.01.07]
 
