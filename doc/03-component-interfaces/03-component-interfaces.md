@@ -15,22 +15,23 @@ and enhanced interfaces.
 The kernel interface provides the minimal functionality you would expect of
 your data type. By convention, we would name our kernel interface
 `ComponentKernel`, where `Component` is the name of your component. As an
-example, the kernel interface for the `Point3D` component would be written
-as `Point3DKernel`, and it's skeleton would look as follows:
+example, the kernel interface for the `NaturalNumber` component would be written
+as `NaturalNumberKernel`, and it's skeleton would look as follows:
 
 ```java
-public interface Point3DKernel extends Standard<Point3D> {
+public interface NaturalNumberKernel extends Standard<NaturalNumber> {
    ...
 }
 ```
 
 Similarly, the enhanced interfaces provides all of the methods that we want
 to layer on top of the kernel. Again, by convention, we use the name of the
-component directly for the enhanced interface. For example, `Point3D` would
-be the name of the enhanced interface, and its skeleton would look as follows:
+component directly for the enhanced interface. For example, `NaturalNumber`
+would be the name of the enhanced interface, and its skeleton would look as
+follows:
 
 ```java
-public interface Point3D extends Point3DKernel {
+public interface NaturalNumber extends NaturalNumberKernel {
    ...
 }
 ```

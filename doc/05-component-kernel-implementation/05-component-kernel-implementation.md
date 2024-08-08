@@ -15,18 +15,18 @@ complete a kernel implementation, just like you've done so many times already.
 In keeping with the software sequence discipline, you should create the final
 class in the form of `Component#`, where `Component` is the name of your
 component and `#` is the number of your implementation. For example, using
-Point3D, our kernel implementation might be called `Point3D1`. Note that
-by convention, we use the letter `L` to indicate a "thin" layer over an existing
-component. For instance, we might call it `Point3D1L` if the representation is
-one of the point classes that already exists in Java. Alternatively, you are
-welcome to be more explicit in your naming conventions. For example, if we
-implement Point3D on an array, we might call it `Point3DOnArray`. This more
-closely mirrors the naming style seen in the Java Collections Framework, such
-as `HashSet` vs. `TreeSet`. In any case, the implementation should have the
-following form:
+NaturalNumber, our kernel implementation might be called `NaturalNumber1L`. Note
+that by convention, we use the letter `L` to indicate a "thin" layer over an
+existing component. For instance, we might call it `NaturalNumber1L` if the
+representation is one of the NaturalNumber classes that already exists in Java.
+Alternatively, you are welcome to be more explicit in your naming conventions.
+For example, if we implement NaturalNumber on an array, we might call it
+`NaturalNumberOnArray`. This more closely mirrors the naming style seen in the
+Java Collections Framework, such as `HashSet` vs. `TreeSet`. In any case, the
+implementation should have the following form:
 
 ```java
-public class Point3D1 extends Point3DSecondary {
+public class NaturalNumber1L extends NaturalNumberSecondary {
    ...
 }
 ```

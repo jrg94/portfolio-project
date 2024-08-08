@@ -10,11 +10,11 @@ Now that you've had a chance to refine your designs a bit, it's time to start
 writing some code. In this assignment, you will be making your first abstract
 class. The abstract class will take on the name `ComponentSecondary`, where
 `Component` is the name of your component. For example, if you're making a
-Point3D component, the abstract class would be called `Point3DSecondary` as
-follows:
+NaturalNumber component, the abstract class would be called
+`NaturalNumberSecondary` as follows:
 
 ```java
-public abstract class Point3DSecondary implements Point3D {
+public abstract class NaturalNumberSecondary implements NaturalNumber {
    ...
 }
 ```
