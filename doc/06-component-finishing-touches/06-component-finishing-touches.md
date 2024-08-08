@@ -152,35 +152,35 @@ class.
 Unlike throughout the semester, testing will not involve testing against
 a reference implementation. As a result, testing is a bit messier and will
 involve calling kernel methods to check state. For example, here is a test
-case for one of the getters in Point3D:
+case for one of the getters in NaturalNumber:
 
 ```java
 @Test
-public void testGetXOne() {
-    Point3D p = new Point3D1(1, 3, 5);
-    assertEquals(1, p.getX(), .0001);
+public void testIsZero() {
+    NaturalNumber n = new NaturalNumber1L();
+    assertEquals(true, n.isZero());
 }
 ```
 
 Note that this kind of testing is not as effective as the reference testing
-because it doesn't verify the entirety of the point's state. For example,
-it's possible that `p.getX()` somehow changes the state of `p`. By only
-verifying the x-coordinate, there's no way of knowing if the remaining
-coordinates are still correct. Therefore, it's probably better to write a test
+because it doesn't verify the entirety of the number's state. For example,
+it's possible that `n.isZero()` somehow changes the state of `n`. By only
+verifying the boolean value, there's no way of knowing if the remaining
+number is still intact. Therefore, it's probably better to write a test
 as follows:
 
 ```java
 @Test
 public void testGetXOne() {
-    Point3D p = new Point3D1(1, 3, 5);
-    Point3D pCopy = new Point3D1(1, 3, 5);
-    assertEquals(1, p.getX(), .0001);
-    assertEquals(pCopy, p);
+    NaturalNumber n = new NaturalNumber1L();
+    NaturalNumber nCopy = new NaturalNumber1L();
+    assertEquals(true, n.isZero());
+    assertEquals(nCopy, n);
 }
 ```
 
-At least that way, you know the point is unchanged (i.e., `getX()` properly
-restored `p`).
+At least that way, you know the number is unchanged (i.e., `isZero()` properly
+restored `n`).
 
 ### Use Cases
 
@@ -189,22 +189,20 @@ for your component. To do that, the only expectation is that you generate
 two Java files in `src` with example code using your component either as part of
 the representation of some other proof-of-concept component or directly in
 `main`. For instance, the following class would be a extremely minimal example
-of how Point3D might be used as part of a representation:
+of how NaturalNumber might be used as part of a representation:
 
 ```java
-public class Square {
+public class WholeNumber {
 
-    private Point3D topLeftCorner;
-    private Point3D bottomRightCorner;
+    private NaturalNumber n;
 
-    public Square(Point3D topLeftCorner, Point3D bottomRightCorner) {
-        this.topLeftCorner = topLeftCorner;
-        this.bottonRightCorner = bottomRightCorner;
+    public WholeNumber(int n) {
+       assert n >= 0 : "Violation of: n >= 0";
+       this.n = new NaturalNumber1L(n);
     }
 
-    public double area() {
-        double diagonal = this.topLeftCorner.distance(this.topRightCorner);
-        return (diagonal * diagonal) / 2;
+    public void countUp() {
+       this.n.increment();
     }
 }
 ```
@@ -255,33 +253,33 @@ that your directories look as follows before submission:
 │       README.md
 │
 ├───src
-│   │   Point3DDemo.java
+│   │   NaturalNumberDemo.java
 │   │   README.md
-│   │   Square.java
+│   │   WholeNumber.java
 │   │
 │   └───components
-│       └───geometry
-│           └───point
-│                   Point3D.java
-│                   Point3D1.java
-│                   Point3DKernel.java
-│                   Point3DSecondary.java
+│       └───naturalnumber
+│                       NaturalNumber.java
+│                       NaturalNumber1L.java
+│                       NaturalNumberKernel.java
+│                       NaturalNumberSecondary.java
 │
 └───test
     │   README.md
     │
     └───components
-        └───geometry
-            └───point
-                    Point3D1Test.java
-                    Point3DTest.java
+        └───naturalnumber
+                        NaturalNumber1LTest.java
+                        NaturalNumberTest.java
 ```
 
 In addition, you'll want to take into account everything you've learned over
 the last two semesters to ensure your code is of good quality. That includes
 but is not limited to documenting your methods with parameter modes, giving your
 variables good names, making good use of whitespace, respecting CheckStyle, and
-just generally not taking shortcuts. **Have some pride in your work!**
+just generally not taking shortcuts. Ultimately, you should be incorporating
+the feedback you've received throughout this process into your final product.
+**Have some pride in your work!**
 
 ## Post-Assignment Tasks
 
