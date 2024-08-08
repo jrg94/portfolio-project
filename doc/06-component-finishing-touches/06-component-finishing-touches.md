@@ -209,6 +209,80 @@ public class Square {
 }
 ```
 
+### Polish
+
+Overall polish involves a variety of efforts to demonstrate code quality.
+One of which would be directory structure. As an example, I would recommend
+that your directories look as follows before submission:
+
+```
+│   .gitattributes
+│   .gitignore
+│   LICENSE
+│   README.md
+│
+├───.vscode
+│       extensions.json
+│       osu-cse-checkstyle-config.xml
+│       osu-cse-formatter.xml
+│       settings.json
+│
+├───doc
+│   │   README.md
+│   │
+│   ├───01-component-brainstorming
+│   │       01-component-brainstorming.md
+│   │
+│   ├───02-component-proof-of-concept
+│   │       02-component-proof-of-concept.md
+│   │
+│   ├───03-component-interfaces
+│   │       03-component-interfaces.md
+│   │
+│   ├───04-component-abstract-class
+│   │       04-component-abstract-classes.md
+│   │
+│   ├───05-component-kernel-implementation
+│   │       05-component-kernel-implementation.md
+│   │
+│   └───06-component-finishing-touches
+│           06-component-finishing-touches.md
+│
+├───lib
+│       components.jar
+│       hamcrest-core-1.3.jar
+│       junit-4.13.2.jar
+│       README.md
+│
+├───src
+│   │   Point3DDemo.java
+│   │   README.md
+│   │   Square.java
+│   │
+│   └───components
+│       └───geometry
+│           └───point
+│                   Point3D.java
+│                   Point3D1.java
+│                   Point3DKernel.java
+│                   Point3DSecondary.java
+│
+└───test
+    │   README.md
+    │
+    └───components
+        └───geometry
+            └───point
+                    Point3D1Test.java
+                    Point3DTest.java
+```
+
+In addition, you'll want to take into account everything you've learned over
+the last two semesters to ensure your code is of good quality. That includes
+but is not limited to documenting your methods with parameter modes, giving your
+variables good names, making good use of whitespace, respecting CheckStyle, and
+just generally not taking shortcuts. **Have some pride in your work!**
+
 ## Post-Assignment Tasks
 
 The following sections detail everything that you should do once you've
