@@ -85,86 +85,54 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric
 
-Again, to be completely transparent, most of the portfolio project, except the
-final submission, is designed as a formative assessment. Formative assessments
-are meant to provide ongoing feedback in the learning process. Therefore,
-the rubric is designed to assess the learning objectives *directly* in a way
-that is low stakes—meaning you shouldn't have to worry about the grade. Just
-do good work.
+Unlike previous parts of the portfolio project, in this part of the project,
+you'll receive a summative assessment, which usually involves a more critical
+lens. In other words, at this stage, we're expecting you to demonstrate some
+mastery of the material. See the rubric items for specifics.
 
 1. (15 points) All component methods must be tested including the Standard,
    kernel, and secondary methods. The format of testing will be different from
    the style used in the course because it is unlikely that you will have an
    existing component to test against (more on this below).
-2. (15 points) There must be at least two different sample codes provided that
+2. (10 points) There must be at least two different sample codes provided that
    show how the component might be used. For example, consider how `XMLTree`
    was used to create the `RSSReader` and the `RSSAggregator`. There is no
    expectation that you provide samples to this much depth, but two files
    with at least a main method would be excellent.
-3. (5 points) The complete package (and ideally just the entire portfolio
-   project directly) must be committed to some open-source software repository,
-   such as GitHub. Appropriate efforts should be made to make the remote
-   repository easy to navigate and explore, such as by overwriting the root
-   README with details about your project.
-4. (15 points) As you work through these finishing touches, take a moment to
+3. (15 points) As you work through these finishing touches, take a moment to
    reflect on the software development process. There are reflection prompts
    below. You should also reflect on your growth as a developer and share
    details about what you've learned.
+4. (10 points) The overall component must exhibit a high level of polish.
+   Because all previous parts of this assignment are meant to be formative,
+   assessments were generally charitable. In this phase, you should submit
+   a component as if you were a professional software engineer. Follow good
+   practices like using good variable names, documenting your methods, and
+   overall adhering to the discipline.
 
 ## Pre-Assignment Tasks
 
-Now that you have created a software component from scratch, it's time to
-reflect on that process as well as take some time to think about your
-growth as a developer. Below, you will find a series of reflection prompts.
-Take some time to fill them out honestly.
+To finish your component, make a branch off of main in your new repo called
+something like `finishing-touches`. There are many ways to do this, but my
+preference is to use GitHub Desktop. From there, you can click the `Branch`
+tab, select `New branch`, and name your new branch. Alternatively, VSCode has
+its own GUI for git. You can also make use of the command line directly in
+VSCode to run git commands. It's entirely up to you. Regardless of your choice,
+we'll want a branch that you can later make a pull request from with all
+your changes.
 
-### Software Development
+**Note**: because you may have changes still sitting in a pull request,
+you'll want to make this new branch directly from main. This may seem weird
+because you won't be able to see the other parts (e.g., your proof of concept)
+in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
+together later. However, this does mean that you may be waiting for a pull
+request to see if your different features fit together. Once the pull request
+merges, you will need to pull the changes from main into your current branch
+to see them. If you don't like this workflow, you may try following the
+rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
+and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-> A common gripe that students express is how much they feel the work they do
-> in class fails to map to the real world. Now that you've had a chance to
-> complete the portfolio project, how much better (or worse) do you think you
-> understand software development and why?
-
-<!-- TODO: discuss -->
-
-> Also, did the portfolio project surface any gaps in your own knowledge of
-> software development. If so, what are those gaps and how did you address them?
-
-<!-- TODO: discuss -->
-
-> Finally, as a part of completing the portfolio project, to what extent has
-> your perspective of software development changed, if at all? In other words,
-> is software development something you still enjoy? If not, why not?
-
-<!-- TODO: discuss -->
-
-### Personal Growth
-
-> One of the challenges of completing the portfolio project is picking up a lot
-> of skills on your own. Some of these skills are, of course, software skills.
-> However, there are plenty of other skills you may have picked up through
-> this process. Therefore, the first question is what skills did you pick up
-> through this process?
-
-<!-- TODO: discuss -->
-
-> The follow-up question is: could you rephrase these skills you picked up
-> as bullet points that you could put on a resume? Try it below.
-
-<!-- TODO: discuss -->
-
-> Next, how has working on this project affected your career trajectory?
-> In other words, do you now hate the topic you picked? Or, are you even more
-> interested in it? Both outcomes are valuable to your personal development.
-
-<!-- TODO: discuss -->
-
-> Finally, consider the skills you've picked up and your current career
-> trajectory. What are some things you could do to continue on your
-> career trajectory? Also, who are some mentors you could contact to help
-> you stay on your path?
-
-<!-- TODO: discuss -->
+<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -184,35 +152,35 @@ class.
 Unlike throughout the semester, testing will not involve testing against
 a reference implementation. As a result, testing is a bit messier and will
 involve calling kernel methods to check state. For example, here is a test
-case for one of the getters in Point3D:
+case for one of the getters in NaturalNumber:
 
 ```java
 @Test
-public void testGetXOne() {
-    Point3D p = new Point3D1(1, 3, 5);
-    assertEquals(1, p.getX(), .0001);
+public void testIsZero() {
+    NaturalNumber n = new NaturalNumber1L();
+    assertEquals(true, n.isZero());
 }
 ```
 
 Note that this kind of testing is not as effective as the reference testing
-because it doesn't verify the entirety of the point's state. For example,
-it's possible that `p.getX()` somehow changes the state of `p`. By only
-verifying the x-coordinate, there's no way of knowing if the remaining
-coordinates are still correct. Therefore, it's probably better to write a test
+because it doesn't verify the entirety of the number's state. For example,
+it's possible that `n.isZero()` somehow changes the state of `n`. By only
+verifying the boolean value, there's no way of knowing if the remaining
+number is still intact. Therefore, it's probably better to write a test
 as follows:
 
 ```java
 @Test
 public void testGetXOne() {
-    Point3D p = new Point3D1(1, 3, 5);
-    Point3D pCopy = new Point3D1(1, 3, 5);
-    assertEquals(1, p.getX(), .0001);
-    assertEquals(pCopy, p);
+    NaturalNumber n = new NaturalNumber1L();
+    NaturalNumber nCopy = new NaturalNumber1L();
+    assertEquals(true, n.isZero());
+    assertEquals(nCopy, n);
 }
 ```
 
-At least that way, you know the point is unchanged (i.e., `getX()` properly
-restored `p`).
+At least that way, you know the number is unchanged (i.e., `isZero()` properly
+restored `n`).
 
 ### Use Cases
 
@@ -221,32 +189,29 @@ for your component. To do that, the only expectation is that you generate
 two Java files in `src` with example code using your component either as part of
 the representation of some other proof-of-concept component or directly in
 `main`. For instance, the following class would be a extremely minimal example
-of how Point3D might be used as part of a representation:
+of how NaturalNumber might be used as part of a representation:
 
 ```java
-public class Square {
+public class WholeNumber {
 
-    private Point3D topLeftCorner;
-    private Point3D bottomRightCorner;
+    private NaturalNumber n;
 
-    public Square(Point3D topLeftCorner, Point3D bottomRightCorner) {
-        this.topLeftCorner = topLeftCorner;
-        this.bottonRightCorner = bottomRightCorner;
+    public WholeNumber(int n) {
+       assert n >= 0 : "Violation of: n >= 0";
+       this.n = new NaturalNumber1L(n);
     }
 
-    public double area() {
-        double diagonal = this.topLeftCorner.distance(this.topRightCorner);
-        return (diagonal * diagonal) / 2;
+    public void countUp() {
+       this.n.increment();
     }
 }
 ```
 
-### Publishing
+### Polish
 
-Hopefully, you've already been working out of version control software this
-entire semester. However, if you have not, the last step would be getting
-the project committed to an open-source repository, such as GitHub. Before
-submission, I would recommend that your repo looks something like the following:
+Overall polish involves a variety of efforts to demonstrate code quality.
+One of which would be directory structure. As an example, I would recommend
+that your directories look as follows before submission:
 
 ```
 │   .gitattributes
@@ -288,57 +253,150 @@ submission, I would recommend that your repo looks something like the following:
 │       README.md
 │
 ├───src
-│   │   Point3DDemo.java
+│   │   NaturalNumberDemo.java
 │   │   README.md
-│   │   Square.java
+│   │   WholeNumber.java
 │   │
 │   └───components
-│       └───geometry
-│           └───point
-│                   Point3D.java
-│                   Point3D1.java
-│                   Point3DKernel.java
-│                   Point3DSecondary.java
+│       └───naturalnumber
+│                       NaturalNumber.java
+│                       NaturalNumber1L.java
+│                       NaturalNumberKernel.java
+│                       NaturalNumberSecondary.java
 │
 └───test
     │   README.md
     │
     └───components
-        └───geometry
-            └───point
-                    Point3D1Test.java
-                    Point3DTest.java
+        └───naturalnumber
+                        NaturalNumber1LTest.java
+                        NaturalNumberTest.java
 ```
 
-There is no correct directory structure, but something like this will make it
-easier for others to browse.
-
-At any rate, once you're ready to commit, I would run a `git init` from the
-portfolio root. Then, you can make use of whatever tools you want to get the
-code to your remote server of choice. For example, you might follow up the
-`git init` with a `git add .` and `git commit -m "Finalized my project"`.
-At that point, you might use a tool like GitHub desktop to publish the repo
-for you to GitHub. Otherwise, you have to do a bit more manual labor. In any
-case, I trust that you can figure it out!
+In addition, you'll want to take into account everything you've learned over
+the last two semesters to ensure your code is of good quality. That includes
+but is not limited to documenting your methods with parameter modes, giving your
+variables good names, making good use of whitespace, respecting CheckStyle, and
+just generally not taking shortcuts. Ultimately, you should be incorporating
+the feedback you've received throughout this process into your final product.
+**Have some pride in your work!**
 
 ## Post-Assignment Tasks
 
 The following sections detail everything that you should do once you've
 completed the assignment.
 
+### Reflection
+
+Now that you have created a software component from scratch, it's time to
+reflect on that process as well as take some time to think about your
+growth as a developer. Below, you will find a series of reflection prompts.
+Take some time to fill them out honestly.
+
+> A common gripe that students express is how much they feel the work they do
+> in class fails to map to the real world. Now that you've had a chance to
+> complete the portfolio project, how much better (or worse) do you think you
+> understand software development and why?
+
+<!-- TODO: discuss -->
+
+> Also, did the portfolio project surface any gaps in your own knowledge of
+> software development. If so, what are those gaps and how did you address them?
+
+<!-- TODO: discuss -->
+
+> Finally, as a part of completing the portfolio project, to what extent has
+> your perspective of software development changed, if at all? In other words,
+> is software development something you still enjoy? If not, why not?
+
+<!-- TODO: discuss -->
+
+> One of the challenges of completing the portfolio project is picking up a lot
+> of skills on your own. Some of these skills are, of course, software skills.
+> However, there are plenty of other skills you may have picked up through
+> this process. Therefore, the first question is what skills did you pick up
+> through this process?
+
+<!-- TODO: discuss -->
+
+> The follow-up question is: could you rephrase these skills you picked up
+> as bullet points that you could put on a resume? Try it below.
+
+<!-- TODO: discuss -->
+
+> Next, how has working on this project affected your career trajectory?
+> In other words, do you now hate the topic you picked? Or, are you even more
+> interested in it? Both outcomes are valuable to your personal development.
+
+<!-- TODO: discuss -->
+
+> Finally, consider the skills you've picked up and your current career
+> trajectory. What are some things you could do to continue on your
+> career trajectory? Also, who are some mentors you could contact to help
+> you stay on your path?
+
+<!-- TODO: discuss -->
+
+### Changelog
+
+<!-- TODO: update CHANGELOG then delete this comment -->
+
+At the end of every assignment, you should update the
+[CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
+Here's what I would expect to see at the minimum:
+
+```markdown
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Calendar Versioning](https://calver.org/) of
+the following form: YYYY.0M.0D.
+
+## YYYY.MM.DD
+
+### Added
+
+- Designed test suite for <!-- insert name of component here --> component
+- Designed two different use cases for <!-- insert name of component here --> component
+
+### Updated
+
+- Changed design to include ...
+
+```
+
+Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
+
+You may notice that things are nicely linked in the root CHANGELOG. If you'd
+like to accomplish that, you will need to make GitHub releases after each pull
+request merge (or at least tag your commits). This is not required.
+
 ### Submission
 
-If you have completed the assignment using this template, we recommend that you
-convert it to a PDF before submission. If you're not sure how, check out
-this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
-created for you automatically every time you save, so just double check that
-all your work is there before submitting.
+<!-- TODO: read the submission instructions then delete this comment -->
 
-Unlike before, there is no requirement that you submit any code in PDFs on
-Carmen. Instead, you should submit the URL to the remote repository for your
-project. You should also upload the zip of your code alongside the PDF of
-this assignment. If you want feedback, your best bet is to use GitHub, so I
-can open issues related to your code directly.
+Assuming that your project is in a GitHub repo somewhere and your changes are on
+a proof-of-concept branch, then what we'll want you to do is create a pull
+request of all your changes. Pull requests are pretty easy to make if you're
+using GitHub Desktop. Just click the `Branch` tab and select
+`Create pull request`. This should pull up your browser with the pull request
+form ready to complete. Give your pull request a good title like "Completed Part
+6 of the Portfolio Project" and briefly describe what you've done. Then, click
+"Create pull request".
+
+If all goes well, you should have a pull request that you can submit to Carmen
+via its URL. The URL should be in the form:
+`https://github.com/username/repo-name/pull/#`
+
+**Note**: you are the owner of the repo, so you are not required to wait for
+feedback before merging. After all, the main purpose of the pull request is to
+put all your changes in once place for a code review. However, I highly
+recommend keeping the pull request open until at least a peer has had a chance
+to look over your changes. Otherwise, you defer needed changes to later pull
+requests, which could sacrifice the overall quality of your work or result in
+major rework.
 
 ### Peer Review
 

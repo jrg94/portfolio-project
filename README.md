@@ -8,7 +8,22 @@ component in the software sequence discipline.
 When starting your portfolio project, the following steps should make your life
 a bit easier.
 
-### Step 1: Install Recommended Plugins
+### Step 1: Create a Repo From This Template
+
+<!-- TODO: use GitHub to create a repo from this template -->
+
+Assuming you're reading this README from GitHub, you can make use of this
+repo by clicking the `Use this template` button in the top-right corner of
+this page. Personally, I would recommend using the `Create a new repository`
+option, which will allow you to name the repository after your component.
+Given that you will be submitting pull requests to me through Carmen, you'll
+want to make sure your repository is public. Then, you can click `Create
+repository`. After that, you can go through all the usual steps of cloning
+a repository on your system to get to work. I use GitHub Desktop to clone
+projects, and it has a nice feature of letting you open a repo directly in
+VSCode from the `Repository` menu.
+
+### Step 2: Install Recommended Plugins
 
 <!-- TODO: install recommended plugins and delete this comment -->
 
@@ -18,7 +33,7 @@ Click install all. If you ignored this message or it never came up, feel free
 to press CTRL+SHIFT+P and type "Show Recommended Extensions". Install all of the
 extensions listed.
 
-### Step 2: Install the Latest JDK
+### Step 3: Install the Latest JDK
 
 <!-- TODO: install latest JDK and delete this comment -->
 
@@ -28,7 +43,7 @@ require you to register for an account or to install on the command line.
 Regardless, there is no mac support. As a result, I would just recommend
 installing the latest JDK [directly from Oracle's site][jdk-downloads].
 
-### Step 3: Add Key Libraries to Project
+### Step 4: Add Key Libraries to Project
 
 <!-- TODO: add key libraries to project and delete this comment -->
 

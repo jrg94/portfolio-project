@@ -8,6 +8,8 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2024.08.07]
+
 ### Added
 
 - Added `/bin` to `.gitignore`, so binaries are no longer committed
@@ -16,6 +18,11 @@ the following form: YYYY.0M.0D.
 - Added the `todo-tree.tree.showCountsInTree` setting to `settings.json`
 - Added the VSCode PDF extension to `extensions.json`
 - Added `java.debug.settings.vmArgs` setting to enable assertions (i.e., `-ea`)
+- Added information about making branches to all parts of the project
+- Added information about how to update the CHANGELOG to every part of the
+  project
+- Added information about how to make a pull request to every part of the
+  project
 
 ### Changed
 
@@ -34,6 +41,9 @@ the following form: YYYY.0M.0D.
   to avoid the getter/setter trend
 - Updated assignment feedback sections to include a link to a survey that
   I'll actually review
+- Updated README to include step about using template repo
+- Updated part 3 rubric to include a hierarchy diagram
+- Updated part 6 rubric to account for overall polish
 
 ### Fixed
 
@@ -42,6 +52,7 @@ the following form: YYYY.0M.0D.
 ### Removed
 
 - Removed `java.saveActions.organizeImports` setting from `settings.json`
+- Removed references to `Point3D` completely
 
 ## [2024.01.07]
 
@@ -56,5 +67,6 @@ the following form: YYYY.0M.0D.
 - Created initial drafts of the six portfolio assessments
 - Added READMEs to key folders like `test` and `lib` to explain their purpose
 
-[unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...HEAD
+[unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
+[2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
