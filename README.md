@@ -45,6 +45,22 @@ require you to register for an account or to install on the command line.
 Regardless, there is no mac support. As a result, I would just recommend
 installing the latest JDK [directly from Oracle's site][jdk-downloads].
 
+For some folks, installing a JDK may not be possible (e.g., your system
+may be managed by an administrator). In that case, download and extract
+the zip version of the JDK somewhere on your system. Then, you will need
+to update the Java language support extension through the `settings.json`
+file. For example, you might add the following setting:
+
+```json
+"java.configuration.runtimes": [
+  {
+    "name": "JavaSE-22",
+    "path": "/path/to/jdk-22",
+    "default": true
+  },
+]
+```
+
 ### Step 4: Add Key Libraries to Project
 
 <!-- TODO: add key libraries to project and delete this comment -->
@@ -78,6 +94,6 @@ will be deadlines for each step in Carmen, but you're free to complete each step
 as early as you'd like. To start, you'll want to visit the [doc](doc/) directory
 for each assignment file.
 
-[components-jar]: http://web.cse.ohio-state.edu/software/common/components.jar
+[components-jar]: https://cse22x1.engineering.osu.edu/common/components.jar
 [jdk-downloads]: https://www.oracle.com/java/technologies/downloads/
 [use-this-template]: https://github.com/new?template_name=portfolio-project&template_owner=jrg94
