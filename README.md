@@ -14,14 +14,16 @@ a bit easier.
 
 Assuming you're reading this README from GitHub, you can make use of this
 repo by clicking the `Use this template` button in the top-right corner of
-this page. Personally, I would recommend using the `Create a new repository`
-option, which will allow you to name the repository after your component.
-Given that you will be submitting pull requests to me through Carmen, you'll
-want to make sure your repository is public. Then, you can click `Create
-repository`. After that, you can go through all the usual steps of cloning
-a repository on your system to get to work. I use GitHub Desktop to clone
-projects, and it has a nice feature of letting you open a repo directly in
-VSCode from the `Repository` menu.
+this page. If you can't find the button, [this link][use-this-template] 
+should work as well. Personally, I would recommend using the 
+`Create a new repository` option, which will allow you to name the 
+repository after your component. Given that you will be submitting pull 
+requests to me through Carmen, you'll want to make sure your repository 
+is public. Then, you can click `Create repository`. After that, you can 
+go through all the usual steps of cloning a repository on your system to 
+get to work. I use GitHub Desktop to clone projects, and it has a nice 
+feature of letting you open a repo directly in VSCode from the 
+`Repository` menu.
 
 ### Step 2: Install Recommended Plugins
 
@@ -78,3 +80,4 @@ for each assignment file.
 
 [components-jar]: http://web.cse.ohio-state.edu/software/common/components.jar
 [jdk-downloads]: https://www.oracle.com/java/technologies/downloads/
+[use-this-template]: https://github.com/new?template_name=portfolio-project&template_owner=jrg94
