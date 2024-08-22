@@ -73,8 +73,8 @@ you put here by default, so don't worry about committing it to version control.
 Similarly, you will need the testing APIs (e.g., JUnit). Perhaps the easiest way
 to include them in your project is to click the beaker symbol in the left
 sidebar; it's right below the extensions button which looks like four squares.
-If you do not see this button, try creating a Java file in `src`.  
-From there, you can click "Enable Java Tests" and then click "JUnit" from the
+If you do not see this button, try creating a Java file in `src`. From there, 
+you can click "Enable Java Tests" and then click "JUnit" from the
 dropdown. That's it! You should now see the two JUnit libraries in the lib
 folder.
 
