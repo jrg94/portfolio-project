@@ -1,3 +1,5 @@
+### STANDARD JAVA FILES ###
+
 # Compiled class file
 *.class
 
@@ -10,7 +12,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package files
 *.jar
 *.war
 *.nar
@@ -23,8 +25,14 @@
 hs_err_pid*
 replay_pid*
 
-# rendered files
-*.pdf
+### COURSE FILES ###
 
-# binaries
-/bin
+# System files
+.DS_Store
+
+# Render files
+*.pdf
+*tmp.html
+
+# Folders that will not be committed to the repo, even if private
+bin/*
