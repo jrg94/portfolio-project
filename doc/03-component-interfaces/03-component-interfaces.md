@@ -121,7 +121,7 @@ how everything fits in the discipline hierarchy. You have seen many of these
 diagrams already, so you should be able to draw one. Feel free to make a
 hierarchy diagram using whatever tools you would like. Then, include a picture
 of it in this folder. You may also embed it just below using markdown syntax
-(i.e., `[ALT TEXT](path/to/file)`).
+(i.e., `![ALT TEXT](path/to/file)`).
 
 <!-- TODO: make a diagram of your component hierarchy then delete this comment -->
 
@@ -255,8 +255,6 @@ better for future students.
 
 <!-- TODO: follow the link to share your feedback then delete this comment -->
 
-[markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
-[pottery-fails]: https://www.youtube.com/shorts/Kqb9l113F_0?feature=share
 [natural-number-kernel]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumberKernel.html
 [natural-number]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumber.html
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
