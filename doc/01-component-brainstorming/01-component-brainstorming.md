@@ -213,7 +213,6 @@ will likely refine your design to make your implementation easier to use.
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
 
-
 - Component Design #2: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
     - <!-- TODO: describe your component then delete this comment -->
@@ -234,7 +233,6 @@ will likely refine your design to make your implementation easier to use.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
-
 
 - Component Design #3: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
