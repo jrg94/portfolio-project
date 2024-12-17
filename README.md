@@ -1,7 +1,13 @@
 # Portfolio Project
 
 The purpose of this repo is to provide a framework for creating your own
-component in the software sequence discipline.
+component in the software sequence discipline. If you were unsure whether
+or not to make your own, consider the following testimonial:
+
+> I really enjoyed the portfolio project! It gave me a stronger understanding
+> of the OSU software discipline while also giving me the flexibility to
+> design something that reflected my interests. This made the experience
+> rewarding and enjoyable as I created a product I was proud of!
 
 ## Recommended Steps to Get Started
 
