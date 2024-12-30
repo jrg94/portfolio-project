@@ -76,19 +76,11 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (3 points) Each design must align with your personal values and long-term
-   goals. Because the goal of this project is to help your build out a
-   portfolio, you really ought to care about what you're designing. We'll give
-   you a chance to share your personal values, interests, and long-term goals
-   below.
-2. (3 points) Each design must be achievable over the course of a single
-   semester. Don't be afraid to design something very small. There is no shame
-   in keeping it simple.
-3. (4 points) Each design must fit within the software sequence discipline. In
-   other words, your design should expect to inherit from Standard, and it
-   should contain both kernel and secondary methods. Also, null and aliasing
-   must be avoided, when possible. The methods themselves must also be in
-   justifiable locations, such as kernel or secondary.
+| Learning Objective                                                                                        | Subcategory                 | Weight | Missing                                                     | Beginning                                                                              | Developing                                                                                     | Meeting                                                                                 |
+| --------------------------------------------------------------------------------------------------------- | --------------------------- | ------ | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Students should be able to identify their values, interests, and/or goals as they relate to their designs | Metacognitive Memory        | 3      | (0) No attempt to summarize values, interests, and/or goals | (1) A brief description of values, interests, and/or goals is provided but lacks depth | (2) A description of values, interests, and/or goals is provided by are not related to designs | (3) A description of values, interests, and/or goals is provided and relates to designs |
+| Students should be able to predict the feasibility of their designs                                       | Metacognitive Understanding | 3      | (0) No attempt to design components that are feasible       | (1) At least one component is feasible                                                 | (2) At least two components are feasible                                                       | (3) All three components are feasible                                                   |
+| Students should be able to use the OSU discipline in all three designs                                    | Metacognitive Application   | 4      | (0) No attempt to follow the OSU discipline in designs      | (1) At least one design follows the OSU discipline                                     | (3) At least two designs follow the OSU discipline                                             | (4) All three designs follow the OSU discipline                                         |
 
 ## Pre-Assignment
 
@@ -157,10 +149,10 @@ format, we can be more confident that your designs will be possible.
         mutate `this`.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-        - No. All methods work with integers or other NaturalNumbers.
+      - No. All methods work with integers or other NaturalNumbers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-        - Yes. NaturalNumber is base 10, and we track that in a constant called
+      - Yes. NaturalNumber is base 10, and we track that in a constant called
           `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
