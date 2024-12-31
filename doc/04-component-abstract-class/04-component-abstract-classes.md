@@ -90,17 +90,25 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (3 points) In keeping with the concept of iteration, the assignment must
+| Learning Objective                                                                              | Subcategory            | Weight | Missing                                                  | Beginning                                                                                                                                                                   | Developing                                                                      | Meeting                                                                                                                          |
+| ----------------------------------------------------------------------------------------------- | ---------------------- | ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Students should be able to list changes to their design                                         | Factual Memory         | 3      | (0) No attempt made to list design changes               | (1) Changes were listed but not in the CHANGELOG                                                                                                                            | (2) Changes are listed but in chronological order                               | (3) Changes are correctly listed in CHANGELOG in reverse chronological order                                                     |
+| Students should be able to carry out implementations of all enhanced methods and common methods | Procedural Application | 4      | (0) No attempt is made to implement any enhanced methods | (1) An attempt is made to implement the enhanced methods, but they clearly do not work OR implementations make use of global variables and/or kernel implemnetation details | (3) All enhanced methods are implemented, but no common methods are implemented | (4) All enhanced methods are implemented, and common methods are implemented or justifiably excluded (preferably with a comment) |
+| Students should be able to check that calls to kernel methods follow their contracts            | Factual Evaluation     | 3      | (0) No attempt is made to respect kernel contracts       | (1) Some kernel method contracts are respected                                                                                                                              | (2) Most kernel method contracts are respected                                  | (3) All kernel method contracts are respected                                                                                    |
+
+Below is further rationale/explanation for the rubric items above:
+
+1. In keeping with the concept of iteration, the assignment must
    detail all of the changes from most recent submission (i.e., since the
    interfaces). Make sure to explain what was changed and why.
-2. (4 points) The abstract class implementation must implement all methods
+2. The abstract class implementation must implement all methods
    from the enhanced interface (i.e., all secondary methods), and these methods
    must be implemented using only the kernel and Standard methods. In addition,
    the abstract class must implement `toString()` and `equals()`, but you may
    implement `hashCode()` as well. In general, the methods do not have to be
    100% correct, but their logic must make sense (i.e., no low effort
    implementations).
-3. (3 points) When implementing the secondary methods, you must respect the
+3. When implementing the secondary methods, you must respect the
    contracts of the kernel methods. In other words, if a kernel method has a
    precondition, the client of the kernel method must check the precondition.
    If there is no method available to check the precondition, it must be added
