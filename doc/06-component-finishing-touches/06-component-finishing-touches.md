@@ -90,20 +90,29 @@ you'll receive a summative assessment, which usually involves a more critical
 lens. In other words, at this stage, we're expecting you to demonstrate some
 mastery of the material. See the rubric items for specifics.
 
-1. (15 points) All component methods must be tested including the Standard,
+| Learning Objective                                                                              | Subcategory              | Weight | Missing                                                               | Beginning                                                                                                                                          | Developing                                                                                                               | Meeting                                                                                                                                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------- | ------------------------ | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Students should be able to design a JUnit test plan that thoroughly tests all component methods | Procedural Creation      | 15     | (0) No attempt is made to test the component                          | (5) Minimal testing is provided that only covers a small portion of the codebase                                                                   | (10) A test suite is designed but misses some key test cases                                                             | (15) A thorough test plan is designed that covers the entire codebase                                                                                                                                                                                                                           |
+| Students should be able to generate two qualitatively different use cases of their component    | Factual Creation         | 10     | (0) No attempt is made to generate two use cases of the component     | (3) At least one use case is provided                                                                                                              | (7) Two use cases are provided but are not significantly different from each other                                       | (10) Two qualitatively different uses cases are provided showcasing the range of possible uses for the component                                                                                                                                                                                |
+| Students should be able to reflect on the software development process                          | Metacognitive Evaluation | 15     | (0) No attempt is made to reflect on the software development process | (5) A low effort reflection is made to answer the questions and/or clearly falls from a tool like ChatGPT                                          | (10) A genuine reflection is made but some answers are thin or missing                                                   | (15) A genuine reflection is provided that shows metacognition (i.e., a deep consideration for how you've changed or developed)                                                                                                                                                                 |
+| Students should be able to judge the polish of their component                                  | Procedural Evaluation    | 10     | (0) No attempt is made to polish up the component                     | (3) The overall level of polish is consistent with expectations from previous assignments, but no further effort is made to show pride in the work | (7) Polish is demonstrated through adherence to the OSU discipline only; no personal discipline or style is demonstrated | (10) Component demonstrates a high level of pride in the work by not only adhering to the OSU discipline but also by adopting a personal style, which can be demonstrated by documenting the use cases and testing, updating the main README, curating the GitHub page layout for readers, etc. |
+
+Below is further rationale/explanation for the rubric items above:
+
+1. All component methods must be tested including the Standard,
    kernel, and secondary methods. The format of testing will be different from
    the style used in the course because it is unlikely that you will have an
    existing component to test against (more on this below).
-2. (10 points) There must be at least two different sample codes provided that
+2. There must be at least two different sample codes provided that
    show how the component might be used. For example, consider how `XMLTree`
    was used to create the `RSSReader` and the `RSSAggregator`. There is no
    expectation that you provide samples to this much depth, but two files
    with at least a main method would be excellent.
-3. (15 points) As you work through these finishing touches, take a moment to
+3. As you work through these finishing touches, take a moment to
    reflect on the software development process. There are reflection prompts
    below. You should also reflect on your growth as a developer and share
    details about what you've learned.
-4. (10 points) The overall component must exhibit a high level of polish.
+4. The overall component must exhibit a high level of polish.
    Because all previous parts of this assignment are meant to be formative,
    assessments were generally charitable. In this phase, you should submit
    a component as if you were a professional software engineer. Follow good

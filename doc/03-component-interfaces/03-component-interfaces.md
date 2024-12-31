@@ -87,14 +87,23 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (2 points) Because these assignments build on each other, it's important
+| Learning Objective                                                                 | Subcategory              | Weight | Missing                                                         | Beginning                                                                                                              | Developing                                                                         | Meeting                                                                                                                                                           |
+| ---------------------------------------------------------------------------------- | ------------------------ | ------ | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Students should be able to list changes to their design                            | Factual Memory           | 2      | (0) No attempt made to list design changes                      | (.5) Changes were listed but not in the CHANGELOG                                                                      | (1.5) Changes are listed but in chronological order                                | (2) Changes are correctly listed in CHANGELOG in reverse chronological order                                                                                      |
+| Students should be able to provide a hierarchy diagram of their component          | Conceptual Understanding | 2      | (0) No attempt was made to include a hierarchy diagram          | (.5) A hierarchy diagram is included but does not follow the OSU discipline                                            | (1.5) A hierarchy diagram is included with some minor mistakes or missing elements | (2) A proper hierarchy diagram is included which showcases where the two interfaces fit                                                                           |
+| Students should be able to generate client-sided documentation for their component | Factual Creation         | 3      | (0) No attempt is made to generate documentation                | (1) Documentation is included but does not follow expectations from our discipline (e.g., no OSU-specific annotations) | (2) Documentation is included but is no exhaustive                                 | (3) Documentation is included that follows all OSU best practices, such as including standard JavaDoc as well as parameter modes and design by contract as needed |
+| Students should be able to design kernel and enhanced interfaces                   | Procedural Creation      | 3      | (0) No attempt is made to design kernel and enhanced interfaces | (1) Interfaces are created by do not follow OSU discipline                                                             | (2) Interfaces are created with minor bugs like not getting the hierarchy right    | (3) Interfaces are created that properly following the OSU discipline                                                                                             |
+
+Below is further rationale/explanation for the rubric items above:
+
+1. Because these assignments bui0ld on each other, it's important
    to acknowledge the growth and development of your work. Therefore, you must
    show what has been changed following the proof-of-concept as it pertains
    to the interface design.
-2. (2 points) To ensure you have a conceptual understanding of the kernel
+2. To ensure you have a conceptual understanding of the kernel
    and enhanced interfaces as well as how they fit in the larger picture,
    you must include a hierarchy diagram for your component.
-3. (3 points) Both interfaces must include full documentation for all method
+3. Both interfaces must include full documentation for all method
    headers. Documentation must meet the bare minimum expectations for JUnit,
    which means including `@param` for every parameter and `@return` for every
    return type. Documentation must also meet the bare minimum expectations
@@ -102,7 +111,7 @@ do good work.
    other aspects of contracts should be included where applicable, such as
    `@requires`, `@replaces`, `@clears`, and `@updates`. There is no requirement
    to use mathematical notation in your contracts.
-4. (3 points) The kernel interface must, at the very least, inherit from
+4. The kernel interface must, at the very least, inherit from
    `Standard` and compile. In addition, it must contain a handful of minimally
    viable method headers (i.e., the minimum number of methods needed to model
    the data type). Do not include fields or method implementations. However, you
@@ -239,8 +248,8 @@ them with respect. We recommend using the following feedback rubric to ensure
 that your feedback is both helpful and respectful (you may want to render the
 markdown as HTML or a PDF to read this rubric as a table).
 
-| Criteria of Constructive Feedback | Missing                                                                                                                           | Developing                                                                                                                                                                                                                                | Meeting                                                                                                                                                               |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Criteria of Constructive Feedback | Missing | Developing | Meeting |
+| --------------------------------- | ------- | ---------- |v ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Specific                          | All feedback is general (not specific)                                                                                            | Some (but not all) feedback is specific and some examples may be provided.                                                                                                                                                                | All feedback is specific, with examples provided where possible                                                                                                       |
 | Actionable                        | None of the feedback provides actionable items or suggestions for improvement                                                     | Some feedback provides suggestions for improvement, while some do not                                                                                                                                                                     | All (or nearly all) feedback is actionable; most criticisms are followed by suggestions for improvement                                                               |
 | Prioritized                       | Feedback provides only major or minor concerns, but not both. Major and minar concerns are not labeled or feedback is unorganized | Feedback provides both major and minor concerns, but it is not clear which is which and/or the feedback is not as well organized as it could be                                                                                           | Feedback clearly labels major and minor concerns. Feedback is organized in a way that allows the reader to easily understand which points to prioritize in a revision |

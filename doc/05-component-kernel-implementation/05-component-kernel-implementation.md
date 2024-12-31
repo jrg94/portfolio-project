@@ -83,17 +83,25 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (3 points) In this assignment, you must select a representation for your
+| Learning Objective                                                                                 | Subcategory            | Weight | Missing                                                            | Beginning                                                                                                          | Developing                                                                                                            | Meeting                                                                                                                                                                                                     |
+| -------------------------------------------------------------------------------------------------- | ---------------------- | ------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Students should be able to select an appropriate representation for their kernel implementation    | Factual Analysis       | 3      | (0) No attempt was made to select an appropriate representation    | (1) A representation was selected that was less than ideal                                                         | (2) A representation was selected but there are better alternatives                                                   | (3) A representation was selected that makes the kernel methods easy to implement and/or computationally efficient                                                                                          |
+| Students should be able to provide a convention and correspondence for their kernel implementation | Conceptual Application | 3      | (0) No attempt was made to provide a convention and correspondence | (1) At least one of the convention and correspondence are provided                                                 | (2) Both the convention and correspondence are provided but don't completely specify legal values and interpretations | (3) Both the convention and correspondence are provided and both completely specify what values are legal and how to interpret them                                                                         |
+| Students should be able to carry out the implementation of all kernel and standard methods         | Procedural Application | 4      | (0) No attempt is made to implement the kernel                     | (1) A kernel implementation is provided but violates its own convention and correspondence or simply does not work | (2.5) A kernel implementation is provided with minor bugs                                                             | (4) A kernel implementation is provided that correctly implements all the kernel methods according to the convention and correspondence; it also implements all standard methods among other best practices |
+
+Below is further rationale/explanation for the rubric items above:
+
+1. In this assignment, you must select a representation for your
    kernel implementation and justify it. Remember that there are a variety of
    reasons for selecting a particular representation, but a good start is to
    choose one that would be easy to work with. Also, remember that part of
    selecting a representation is also explaining which configurations are valid
    and how the representation will be interpreted.
-2. (3 points) In the source code, you must provide that actual convention and
+2. In the source code, you must provide that actual convention and
    correspondence that you may have discussed below. There is no expectation
    that either the convention or correspondence are written using mathematical
    notation.
-3. (4 points) The kernel implementation must have implementations for all kernel
+3. The kernel implementation must have implementations for all kernel
    and Standard methods as well as at least one constructor. Everything you have
    learned this semester about kernel implementations could reasonably be
    assessed here, such as remembering to use a `createNewRep()` method wherever

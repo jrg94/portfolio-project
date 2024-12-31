@@ -77,16 +77,24 @@ the rubric is designed to assess the learning objectives *directly* in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
-1. (2 points) The choice of design to implement must be justified by considering
+| Learning Objective                                                    | Subcategory            | Weight | Missing                                             | Beginning                                                                      | Developing                                                                                                                                    | Meeting                                                                                                                  |
+| --------------------------------------------------------------------- | ---------------------- | ------ | --------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Students should be able to determine the best component to implement  | Conceptual Evaluation  | 2      | (0) No attempt is made to justify the design choice | (0.5) A brief justification is provided but lacks depth                        | (1.5) A justification is provided but only considers 1-2 factors                                                                              | (2) A justification is provided that considers a variety of real-world factors (such as the limitations of the designer) |
+| Students should be able to provide implementations of several methods | Conceptual Application | 4      | (0) No attempt is made to implement several methods | (1) Only one method is provided                                                | (3) Several methods are provided but mostly of a particular type (e.g., only kernels)                                                         | (4) A nice variety of methods are implemented proving the concept                                                        |
+| Students should be able to provide a main method proving the concept  | Conceptual Application | 4      | (0) No attempt is made to provide a main method     | (1) A main method is provided by showcases almost no behavior of the component | (3) A main method is provided but only shows off some of the provided methods OR does not do a good job of selling the value of the component | (4) A main method is provided that shows off a variety of methods for the component AND showcases the component's value  |
+
+Below is further rationale/explanation for the rubric items above:
+
+1. The choice of design to implement must be justified by considering
    a variety of real-world factors. It is okay to say that you selected a
    particular design because you do not know which design is best. We will
    provide a space for you to justify your selection below.
-2. (4 points) The implementation must show off a range of methods on some
+2. The implementation must show off a range of methods on some
    representation to demonstrate feasibility of the overall design. Ideally,
    these methods should be significantly different. For example, don't implement
    only getters. Try to show the extent of the work that would be needed to
    implement the entire design.
-3. (4 points) The implementation must include a main method that constructs the
+3. The implementation must include a main method that constructs the
    component and uses it in a variety of use cases. Part of a proof-of-concept
    is showing the client view. At this stage, we care less about the actual
    implementation and more about whether a client would actually want to use it.
