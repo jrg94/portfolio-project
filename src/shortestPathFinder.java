@@ -12,6 +12,31 @@ import components.simplewriter.SimpleWriter1L;
  * A program to manage a graph and determine direct connections between
  * locations.
  */
+
+/**
+ * Design Choice:
+
+ * Real-world Relevance: Pathfinding algorithms are crucial in various industries,
+ * including automotive for self-driving cars, logistics for warehouse management,
+ * and gaming for character navigation. Developing a reliable pathfinding tool
+ * offers substantial benefits for automation and efficiency in these sectors.
+ * Feasibility: Given the timeframe of a semester, the Pathfind project is feasible
+ * because it relies on well-documented algorithms such as A* and Dijkstra's, which
+ * can be implemented effectively within this period. The project scope is
+ * well-defined with clear milestones for developing and testing each algorithm.
+ * Personal Interest: This project intersects with my academic goals to deepen my
+ * understanding of algorithmic problem-solving and software development. It also
+ * offers a hands-on opportunity to apply theoretical knowledge in a practical,
+ * visually demonstrable way.
+ * Scalability: The Pathfind project is inherently scalable. Initially focusing
+ * on basic 2D grid implementations, it can later expand to more complex scenarios
+ * like 3D environments or dynamically changing obstacles, providing a robust
+ * platform for continued learning and development.
+ * Designer's limitations: The "Pathfind" project is chosen considering my basic
+ * algorithm knowledge, limited resources, and time constraints. The approach
+ * includes phased learning and using university resources to mitigate these
+ * limitations.
+ *
 public final class ShortestPathFinder {
 
     /**
