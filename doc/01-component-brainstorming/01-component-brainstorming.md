@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Dixita Patel
+- **Dot Number**: patel.5417
+- **Due Date**:
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I am a sophmore majoring at Data Analytics.  I really enjoy creating tools that help with productivity, even habit building, and self-improvement.  I love organizing things- that help me succeed in my daily routine, whether it's study sessions, daily routines, or learning tools like flashcards.  I hope to use this project to design a component that reflects those interests and could be useful to students that want to take a few steps to help improve their daily lives.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,8 +115,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +182,93 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: StudySessionTracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - The studysessiontracker helps users to track the amount of time spent on different subjects. Users can start and stop sessions, and they can view their total study time per subject, and identify which subject they have studided the most. This is useful for students all over or even professionals who want to monitor and optimize their study sessions.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void startSession(): starts a studysession for the chosen subject
+    - void endSession(): ends the active studysession and records time spent and if no active session then it simply does nothing.
+    - void isStudying(): returns true if there is already a session in progress, otherewise return false
+    - boolean hasSubject(String subject): checks if a subject has been tracked yet
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - double getTotalTime(): returns the total amount fo time spend studyign on specififc subject of study time.
+    - string getMostStudiedSubject(): returns the subject with most highest total amount
+    - void resetSessions(): clears all recorded study sessions and resets all study time
+
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, because study sessions are contiously removed and added
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - i am not too sure but i could think of somethign that a session could be used mas a class to track different subjects and their time
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - i am not sure
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes a secondary method liek getTotalTime depend on startSession() to track and store study time
+
+- Component Design #2: Flashcard Quiz
+  - **Description**:
+    - The FlashcardQuiz componnet allows users to create flashcards with questions and answers, organize them into decks, and quiz themselves by shuffling and reviewing the cards. This helps users enahcne memory retention through acive recall.
+
+  - **Kernel Methods**:
+    - void addCard(string question, String answer): Adds a new flashcard with a question and its corresponding answer
+    - String removeCard(String question): Removes the flashcard with the given question
+    - boolean isDeckEmpty(): checks if there are any flashcards in the deck
+    - String getAnswer(String question): Retrieves the answer for a question
+    - boolean hasCard(String question) : chekcs if a question exists
+
+  - **Secondary Methods**:
+    - void shuffleDeck(): Randomly shuffles the order of flashcards
+    - String getNextQuestion(): Returnns the next question in the shuffled dock
+    - void resetDeck(): resets the deck to orginal order
+
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - es, becasue flashcards are continuously added, removed and shuffled
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - could use a Map, String> to store questions and answers
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - could use an enum for dekc categories for subjects( MATH< SCIENCE>)
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes for exmaple getNextQuestion() could use isDeckEmpty() to check if there are any cards left before returning the next question
+
+- Component Design #3: HabitTracker
+  - **Description**:
+    - The HabitTracker component allows users to set daily habits, mark them as completed and track their progress over time. It provides motivation by maintaining streak and displaying completion stats. This helps users develop consistent routines and reach long-term goals.
+  - **Kernel Methods**:
+    - void addHabit(String habitName): adds a new habit to the list
+    - void markhabitComplete(String habitName): Marks a habit as completed for the day
+    - int getStreak(String habitName): retrieves the current streak for a habit
+    - boolean hasHabit(String habitName) : checks if habit exists
+
+
+  - **Secondary Methods**:
+    - int getTotalCompletions(String habitName): returns the total number of times the habit was complrted
+    - String getLongestStreak(): Returns the habit with the longest streak
+    - void resetAllHabits(): clears all habit tracking data
+
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - yes, becasue habit completions are continous
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - yeah, could use Map<String, Integer> to store habits and streaks
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - maybe use an enum for habit refuency like daily, weekly, monthly
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - yes, for example getTotalCompletions() could use isHabitComplete() to count the number of times a habit was completed
 
 ## Post-Assignment
 
@@ -269,8 +276,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
