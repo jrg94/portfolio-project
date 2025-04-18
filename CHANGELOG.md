@@ -8,71 +8,99 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
-## [2024.12.30]
-
-- Added table-based rubrics to all 6 parts of the project
-- Updated gitignore to exclude more files
-- Fixed image markdown in the interfaces document
-
-## [2024.08.07]
+## [2025.02.05]
 
 ### Added
 
-- Added `/bin` to `.gitignore`, so binaries are no longer committed
-- Added the TODO tree extensions to `extensions.json`
-- Added the `todo-tree.general.showActivityBarBadge` setting to `settings.json`
-- Added the `todo-tree.tree.showCountsInTree` setting to `settings.json`
-- Added the VSCode PDF extension to `extensions.json`
-- Added `java.debug.settings.vmArgs` setting to enable assertions (i.e., `-ea`)
-- Added information about making branches to all parts of the project
-- Added information about how to update the CHANGELOG to every part of the
-  project
-- Added information about how to make a pull request to every part of the
-  project
+- Designed a Video Player component
+- Designed a Shortest Path Finder component
+- Designed a Text Complexity Analyzer component
 
-### Changed
+## [2025.02.19]
 
-- Updated `settings.json` to format document on save using `editor.formatOnSave`
-  setting
-- Updated `settings.json` to exclude certain files from markdown to PDF
-  generation using `markdown-pdf.convertOnSaveExclude` setting
-- Updated `settings.json` to use latest `java.cleanup.actions` setting
-- Updated `settings.json` to automatically choose line endings using `files.eol`
-  setting
-- Updated `settings.json` to organize imports automatically on save using the
-  `editor.codeActionsOnSave` and `source.organizeImports` settings
-- Changed the component brainstorming assignment to ask a few clarifying
-  questions
-- Changed the component brainstorming example from `Point3D` to `NaturalNumber`
-  to avoid the getter/setter trend
-- Updated assignment feedback sections to include a link to a survey that
-  I'll actually review
-- Updated README to include step about using template repo
-- Updated part 3 rubric to include a hierarchy diagram
-- Updated part 6 rubric to account for overall polish
+### Added
+- Implemented a partial proof-of-concept for the **Shortest Path Finder** component.
+- Added core methods: `addLocation(String location)`, `addPath(String from, String to, double weight)`, and `isConnected(String from, String to)`.
+- Created a minimal `main` method to test the basic functionality of the component.
+- Documented the data structure used (HashMap for graph representation).
+
+### Updated
+- Clarified the scope of the proof-of-concept assignment to ensure it aligns with OSU discipline expectations.
+- Modified `CHANGELOG.md` to reflect the latest progress on the project.
 
 ### Fixed
+- Resolved minor issues with project setup related to branch creation and local repository cloning.
 
-- Fixed issue where checkstyle paths would not work on MacOS
-
-### Removed
-
-- Removed `java.saveActions.organizeImports` setting from `settings.json`
-- Removed references to `Point3D` completely
-
-## [2024.01.07]
+## [2025.03.04]
 
 ### Added
+- Designed and implemented the ShortestPathFinder1 component to manage graph connections and pathfinding.
+- Introduced the following core methods:
+  - `addLocation(String location)`: Adds a location to the graph if it does not already exist.
+  - `addPath(String from, String to, double weight)`: Adds a path between two locations (undirected graph).
+  - `isConnected(String from, String to)`: Checks if there is a direct connection between two locations.
+  - `shortestPath(String from, String to)`: Placeholder for implementing a real pathfinding algorithm (currently returns 0.0).
 
-- Added a list of extensions to capture the ideal student experience
-- Added PDFs to the `.gitignore`
-- Added the OSU checkstyle config file
-- Added the OSU formatter config file
-- Added a `settings.json` file to customize the student experience
-- Created a README at the root to explain how to use the template repo
-- Created initial drafts of the six portfolio assessments
-- Added READMEs to key folders like `test` and `lib` to explain their purpose
+  ### Updated
+- Enhanced the design with detailed comments on the implementation and real-world relevance of the project, including potential uses in industries such as automotive, logistics, and gaming.
+- Improved the code structure to accommodate future pathfinding algorithms and defined a placeholder for shortestPath() to demonstrate its usage.
 
-[unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
-[2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
-[2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
+### Fixed
+- Resolved issues related to graph initialization and edge handling to ensure that paths are properly added between locations.
+
+## [2025.03.25]
+
+### Added
+- Created abstract class `ShortestPathFinderSecondary` as part of the enhanced interface layer.
+- Implemented `shortestPath(String from, String to)` using kernel methods only (simulated Dijkstra’s with BFS style logic).
+- Added common `Object` methods: `toString()`, `equals()`, and `hashCode()` with logic built entirely on public interface methods.
+- Included helper methods `getLocations()` and `hasLocation(String location)` to support abstraction and method implementation.
+
+### Updated
+- Confirmed that secondary methods do not depend on internal representation (`Map<String, Queue<Edge>>`) and respect the design-by-contract principle.
+- Documented method limitations and override requirements in abstract method stubs.
+
+## [2025.04.09]
+
+### Added
+- Implemented `ShortestPathFinder1L`, the kernel implementation for the **Shortest Path Finder** component.
+- Selected `Map<String, Queue<Edge>>` as the internal representation of the graph.
+- Provided complete `Convention` and `Correspondence` in accordance with OSU component design practices.
+- Implemented all required kernel and standard methods:
+  - `addLocation(String location)`
+  - `addPath(String from, String to, double weight)`
+  - `isConnected(String from, String to)`
+  - `clear()`
+  - `newInstance()`
+  - `transferFrom(ShortestPathFinder source)` (throws exception for final field constraint)
+  - `getLocations()` to support abstract behavior
+- Ensured that the kernel implementation fully supports abstraction-layer logic and passes rubric requirements.
+
+### Updated
+- Finalized the core implementation of the **Shortest Path Finder** component, ready for integration with previous abstract and interface layers.
+- Documented kernel-level design decisions directly in the class header, including representation rationale and graph assumptions (e.g., undirected structure, non-null keys).
+
+### [2025.04.18]
+
+### Added
+- Completed the final implementation of the Shortest Path Finder component:
+  - Finalized ShortestPathFinder1L kernel with support for edge representation using nested Edge class and internal Map<String, Queue<Edge>> structure.
+  - Implemented full Dijkstra-style logic in ShortestPathFinderSecondary#shortestPath using only kernel-level methods.
+  - Introduced getLocations() as an abstract method in the secondary layer and provided its concrete implementation in the kernel class.
+- Created comprehensive JUnit test suites for:
+  - ShortestPathFinder1L (kernel layer): 12+ test cases covering all core methods (addLocation, addPath, isConnected, clear, transferFrom, newInstance).
+  - ShortestPathFinderSecondary (abstract layer): multiple tests for shortestPath, equals, toString, and object comparison.
+
+- Added two fully functional user cases:
+  - A city routing application (CityMapRouting) demonstrating shortest path queries through urban locations.
+  - A warehouse robot navigation example (WarehouseRobotNavigation) simulating efficient routing between docking stations and shelves.
+
+### Updated
+- Refined documentation across the interface, abstract, and kernel layers to ensure consistency with OSU component design standards.
+- Enhanced Javadoc for all classes and methods to include clear purpose, parameters, and behavior expectations.
+- Improved abstraction compliance by ensuring secondary logic uses only public interface and abstract methods.
+
+### Fixed
+- orrected inconsistencies in interface hierarchy, ensuring ShortestPathFinder1L properly implements both ShortestPathFinderKernel and Standard<ShortestPathFinder1L>.
+- Addressed abstract method visibility and structural warnings (e.g., "The hierarchy of the type ... is inconsistent").
+- Resolved edge case issues in path checking and location handling during shortest path computation.

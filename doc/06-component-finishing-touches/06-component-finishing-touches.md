@@ -307,18 +307,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+After completing the ShortestPathFinder portfolio project, I feel that my understanding of real-world software development has significantly improved. This project emphasized modular design through interface-kernel-secondary layering, which mirrors how scalable and maintainable software is built in the industry. I also gained experience in writing reusable components, designing for testability, and applying software engineering principles like abstraction and separation of concerns. Unlike smaller assignments, this project made me consider long-term design impact and extensibility, which is much closer to real development work.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes, the project revealed a few key gaps in my understanding. One was managing component dependencies and how to properly structure packages and imports—especially when integrating .jar libraries like the OSU components. I also struggled with interface-based testing at first, particularly understanding how abstract and kernel layers should interact. To address these, I spent time reading documentation, testing various edge cases, and breaking down responsibilities across layers until I could cleanly separate each method's logic. Writing JUnit tests also exposed edge cases I hadn’t initially considered, which helped reinforce defensive programming skills.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+This project reaffirmed my interest in software development. While it did expose how detail-oriented and sometimes frustrating debugging can be—especially when tracking down interface mismatches—it also showed me the satisfaction of building something that works well and is reusable. My appreciation for clean architecture and testing grew tremendously, and I now view software development not just as coding, but as thoughtful design and planning.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +326,52 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+In addition to technical knowledge, I picked up a number of soft skills during this project:
+
+Debugging skills, especially when managing complex interface interactions
+
+Time management, balancing between implementation and thorough testing
+
+Communication skills, as I had to describe methods through Javadoc and reflect through documentation
+
+Independent learning—finding resources and learning by trial and error
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Designed and implemented modular Java components using interface-kernel-secondary architecture
+
+Developed unit tests using JUnit to verify functionality across abstraction layers
+
+Integrated and managed third-party .jar component libraries in a Java project
+
+Wrote comprehensive Javadoc documentation and applied formal specifications (@requires, @ensures)
+
+Applied graph algorithms (e.g., Dijkstra’s) in custom implementations
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+If anything, I’m now even more interested in software engineering and design. I realized that building software isn’t just about implementing functionality—it’s about doing it in a way that’s reusable, testable, and clear to other developers. This aligns closely with areas I want to explore more deeply in the future, such as backend systems and distributed computing.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+To continue on this path, I plan to:
+
+Build more personal projects involving graph algorithms and RESTful APIs
+
+Learn about version control and CI/CD pipelines
+
+Contribute to open-source Java projects to get experience working in larger codebases
+
+As for mentors, I can reach out to my course instructor for software component design or alumni who are working in backend roles. I may also attend university-hosted tech talks or join a software engineering club to find peers and mentors for guidance.
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -384,7 +407,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -436,6 +458,5 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
