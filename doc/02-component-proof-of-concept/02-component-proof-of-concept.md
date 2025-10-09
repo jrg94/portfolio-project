@@ -1,12 +1,12 @@
 # Portfolio Part 2: Component Proof-of-Concept
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Harshith Middela
+- **Dot Number**: middela.1
+- **Due Date**: 10/9/25 1:50
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
+
 
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is

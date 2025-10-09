@@ -28,7 +28,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -103,16 +102,10 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
-I am interested in sports and music to do
+I am interested in sports and music and video games which is roughly what my
+three components will be about.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -120,7 +113,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -130,7 +122,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -198,68 +189,91 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Music playlist manager
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Build a component that models a music playlist. This can let a user add, remove, and organize songs. This can also be used in an app to shuffle songs and also track the amount of times a song is played.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addSong(Song s): Adds song to a playlist
+    - Song removeSong(String title): Removes a song from a playlist
+    - boolean isEmpty(): Tells you wheter a playlist has songs or not
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - void shuffle(): Shuffles a playlist
+    - void sortByArtist(): Sorts artists by songs
+    - void playNext(): Plays next song
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because the contents of the playlist change based on wheter you add, remove,
+      or even shuffle a playlist.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes the component could rely on a song class which could store attributes like
+      title and artist.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - It could maybe need a constant such as DEFAULT_PLAY = 0, which would set
+      the default play count to 0.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yeah, for example shuffle could be implemented by calling the removeSong method
+      constantly and then using addSong to add songs to the playlist to shuffle the songs.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Basketball stats tracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Build a component that keeps track of player's stats, and games played in the NBA
+    This can also be used to see the players with the best stats.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addPlayer(Player p): Adds a player to the dataset
+    - void recordGame(String playerName, int points, int assists, int rebounds): Updates stats for a player after a game.
+    - boolean hasPlayer(String name): Reports if a player is in the tracker or not
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - double playerAveragePoints(String name): Returns the average points scored by a player
+    - String bestScorer(): Finds the player with the highest average points per game
+    - String bestRebounder(): Finds the player with the highest rebounds per game
+    - String bestAssister(): Finds the player with the highest assists per game
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because players' stats change after every game
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - A player class would be helpful to this component because it could be used to store
+      attributes like name, games played, and their respective stats.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - The component would need a constant such as minimum games played and an enum
+      which keeps track a player's stat could be used,
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yeah, for example the playerAveragePoints could be tracked by the total points divided by number
+      of games played which are both kernel methods.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Clash Royale Card Deck Manager
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Build a component that models a Clash Royale battle deck.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addCard(Card c): Adds a card to the deck
+    - Card removeCard(String name): Removes a card from the deck by name
+    - boolean isFull(): Reports whether the deck already has the maximum allowed cards.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - double averageElixirCost(): Computes the average elixir cost of the deck
+    - boolean containsLegendary(): Reports whether the deck has at least one legendary card
+    - void printDeck(): Display all cards without stats
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because decks rely on players choosing new cards.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes it could rely on a card class which tracks the attributes of a card such as
+      name, exlixir, rarity, and type.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - The component could use a maximum deck size, which is eight.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. For example, averageElixirCost() can be implemented by looping through
+      summing all the cards' costs, then dividing it by the maximum deck size.
 
 ## Post-Assignment
 
@@ -268,7 +282,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -286,13 +299,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.09.19
 
 ### Added
 
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a Music playlist manager component
+- Designed a Basketball stats tracker component
+- Designed a Clash Royale Card Deck Manager component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -307,7 +320,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -317,11 +329,9 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -348,7 +358,6 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
