@@ -25,3 +25,12 @@ the following form: YYYY.0M.0D.
 ### Updated
 - Updated project design to focus on the Music Playlist Manager as the selected component for proof-of-concept
 
+## [2025.10.25]
+
+### Added
+- Created `PlaylistManagerKernel.java` and `PlaylistManager.java` interfaces
+- Added hierarchy diagram for PlaylistManager component
+
+### Updated
+- Adjusted design to include enhanced methods: shuffle(), sortByArtist(), and size()
+
