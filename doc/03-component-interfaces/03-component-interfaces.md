@@ -264,6 +264,6 @@ better for future students.
 
 <!-- TODO: follow the link to share your feedback then delete this comment -->
 
-[natural-number-kernel]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumberKernel.html
-[natural-number]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/naturalnumber/NaturalNumber.html
+[natural-number-kernel]: https://cse22x1.engineering.osu.edu/common/doc/src-html/components/naturalnumber/NaturalNumberKernel.html
+[natural-number]: https://cse22x1.engineering.osu.edu/common/doc/src-html/components/naturalnumber/NaturalNumber.html
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
