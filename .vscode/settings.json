@@ -12,18 +12,6 @@
     },
     "files.eol": "auto",
     "files.trimTrailingWhitespace": true,
-    "markdown-pdf.convertOnSave": true,
-    "markdown-pdf.convertOnSaveExclude": [
-        "CHANGELOG.md",
-        "README.md",
-        "HELPME.md"
-    ],
-    "markdown-pdf.format": "Letter",
-    "markdown-pdf.outputDirectory": "",
-    "markdown-pdf.highlightStyle": "a11y-light.css",
-    "print.colourScheme": "A11 Y",
-    "todo-tree.general.showActivityBarBadge": true,
-    "todo-tree.tree.showCountsInTree": true,
     "java.checkstyle.configuration": ".vscode/osu-cse-checkstyle-config.xml",
     "java.format.settings.url": ".vscode/osu-cse-formatter.xml",
     "java.format.settings.profile": "OSU CSE",
@@ -40,5 +28,17 @@
         "qualifyMembers",
         "addOverride"
     ],
-    "java.debug.settings.vmArgs": "-ea"
+    "java.debug.settings.vmArgs": "-ea",
+    "markdown-pdf.convertOnSave": true,
+    "markdown-pdf.convertOnSaveExclude": [
+        "CHANGELOG.md",
+        "README.md",
+        "HELPME.md"
+    ],
+    "markdown-pdf.format": "Letter",
+    "markdown-pdf.outputDirectory": "",
+    "markdown-pdf.highlightStyle": "a11y-light.css",
+    "print.sourcecode.colourScheme": "A11 Y",
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.tree.showCountsInTree": true,
 }
