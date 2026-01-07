@@ -130,6 +130,17 @@ projects usually attempt to model real-world systems like banks, cars,
 etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
+**Note**: Sometimes students will already know what they want to design
+and will feel forced to make one-off designs for components they'll never
+build. If that's you, you may submit three different designs for the same
+component (rather than three different components). This will strengthen your
+final design because you'll have an opportunity to think about different ways of
+organizing the API. As an example, later in the course, you will see a tree
+component that doesn't work by accessing the children through aliases but rather
+by assembling and disassembling the tree. You will also see a variety of
+list-like components that have different ways of manipulating the data. Think
+about different ways you might allow a client to manipulate your component.
+
 ### Example Component
 
 <!-- TODO: review this example component then delete this comment -->
