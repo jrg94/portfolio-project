@@ -36,3 +36,5 @@ replay_pid*
 
 # Folders that will not be committed to the repo, even if private
 bin/*
+
+doc/02-component-proof-of-concept/proof-of-concept.md

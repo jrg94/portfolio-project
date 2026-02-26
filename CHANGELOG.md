@@ -12,6 +12,22 @@ the following form: YYYY.0M.0D.
 - Fixed broken links
 - Disabled AI features globally
 
+## [2026.02.26]
+
+### Added
+
+- Designed a proof of concept for `Tensor` component
+- Created `src/Tensor.java` with 4 kernel methods and 6 secondary methods
+- Created `doc/02-component-proof-of-concept/proof-of-concept.md` planning document
+
+## [2026.02.06]
+
+### Added
+
+- Designed a Tensor component
+- Designed a Vector component
+- Designed a ComplexNumber component
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
