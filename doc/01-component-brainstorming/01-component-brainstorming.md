@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Jiacheng Hou
+- **Dot Number**: hou.688
+- **Due Date**: Feb 6, 2026
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +49,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +63,6 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,15 +101,13 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+Hi！My name is Jiacheng Hou(My personal website: https://hjc704.github.io/). I’m a CSE student at Ohio State with a strong interest in machine learning and computer vision, especially problems related to geometry, perception, and autonomous-driving style pipelines. In my research and projects, I often work with numerical data (vectors, matrices, tensors) and care a lot about writing software that is correct, modular, and easy to reuse. Long term, I want to keep building toward research-oriented engineering roles (and potentially graduate study) where I can design reliable components that support experimentation and scale to larger systems.
+
+Outside of coursework, I enjoy digging into technical details and improving my engineering habits—clean APIs, clear invariants, and testing. I also like exploring math-heavy topics that connect to computing (e.g., linear algebra, optimization, and scientific computing). These interests motivated my component ideas in this portfolio: designing small, disciplined numerical components (like Tensor, Vector, and ComplexNumber) that mirror real-world needs while still being feasible to implement within one semester.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
+
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -122,7 +115,7 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
+
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -143,7 +136,6 @@ about different ways you might allow a client to manipulate your component.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +203,139 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: `Tensor`
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The Tensor component is a simplified 2-dimensional array inspired by
+PyTorch, designed for numerical operations in Java. It provides a
+foundation for scientific computing by representing data in an 2-dimensional grid. This component allows users to store and manipulate
+numerical data in any number of dimensions, making it suitable for
+  applications ranging from simple vector operations to more complex
+matrix computations.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - `T get(int row, int col)`: Returns the value at the specified 2-dimensional index. This is the fundamental read operation for accessing 2D tensor data.
+    - `void set(double value, int row, int col)`: Sets the value at the specified 2D index. This is the fundamental write
+operation for modifying tensor data.
+    - `int[] shape()`: Returns an array representing the size of each dimension of the tensor.
+    - `boolean isZero()`: Reports whether all elements in the tensor are zero. This is analogous to NaturalNumber’s isZero() and provides a simple way to check the tensor’s state.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void add(Tensor a)`: Performs element-wise addition with another tensor of the same shape.
+    - `void scale(double scalar)`: Multiplies every element in the tensor by a scalar value.
+    - `void reshape(int a, int b)`: Changes the shape of the tensor without changing its underlying data. The total number of elements must
+remain the same.
+    - `double sum()`: Calculates and returns the sum of all elements in the tensor.
+    - `Tensor multiply(Tensor b)`: Operate Matrix-multiplication between `this` and another tensor.
+    - `void fill(double value)`: Sets all elements in the tensor to the specified value.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the component is mutable. By extending Standard, it inherits `clear()` , `newInstance()` , and `transferFrom()` which all mutate `this`. Additionally, the kernel method set and secondary methods like `add` , `scale` , `reshape` , and `fill` all modify the tensor’s internal state.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No. The n-dimensional structure can be implemented efficiently using a single, flat one-dimensional array as the internal data store.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, For this simplified design, no special enums or public constants are required. It's a 2-dimension design, and clients can choose different numbers in each dimensions
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. The secondary add method can be implemented by iterating through all elements of the tensors and using the kernel methods `get` and `set` . For example:
+      ```java
+      public void add(Tensor a) {
+        int[] s = this.shape();
+        for (int r = 0; r < s[0]; r++) {
+          for (int c = 0; c < s[1]; c++) {
+            double value = this.get(r, c) + a.get(r, c);
+            this.set(value, r, c);
+          }
+        }
+      }
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+      ```
+
+
+- Component Design #2: `Vector`
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The Vector component represents an n-dimensional mathematical vector, providing operations commonly used in linear algebra, physics
+simulations, and graphics programming. This component is designed to be mutable and follows the OSU software engineering discipline, providing a core set of kernel methods for basic vector manipulation and a richer set of secondary methods for more complex mathematical operations. Unlike the Tensor component, Vector is specifically optimized for one-dimensional numerical data and includes operations like dot
+product and magnitude that are specific to vector mathematics.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void setComponent(int index, double value)`: Sets the value of a
+single component at the given index.
+    - `double getComponent(int index)`: Retrieves the value of a single
+component at the given index.
+    - `int dimension()`: Returns the number of components in the vector.
+    - `boolean isZero()`: Reports whether all components of the vector are zero.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `double dotProduct(Vector other)`: Calculates the dot product of this vector with another vector of the same dimension.
+    - `double magnitude()`: Computes the magnitude of the vector.
+    - `void add(Vector other)`: Adds another vector to this vector.
+    - `void subtract(Vector other)` : Subtracts another vector from this
+vector.
+    - `void scale(double scalar)`: Multiplies every component of the vector by a scalar value.
+    - `void normalize()`: Scales the vector to have a magnitude of 1 (unit
+vector).
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the component is mutable. By extending Standard, it inherit `sclear()` , `newInstance()` , and `transferFrom()` which all mutate `this`. The kernel method `setComponent` and secondary methods like `add` , `subtract` , `scale` , and `normalize` all modify the vector’s internal state.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, a Vector component can be implemented as a single class without the need for internal helper classes. The internal
+representation can be a simple array of doubles
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, for this fundamental design, no specific enums or constants are immediately necessary. A constant for floating-point comparison
+precision, such as `epsilon` could be considered in a more advanced implementation for comparing vectors for equality, but is not essential for the core component.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. For example, the dotProduct secondary method can be implemented by iterating through the vector’s components using the `dimension()` and `getComponent(int index)` kernel methods:
+      ```java
+      public double dotProduct(Vector other) {
+        double total = 0;
+        for (int i = 0; i < this.dimension(); i++) {
+          total += this.getComponent(i) * other.getComponent(i);
+        }
+        return total;
+      }
+      ```
+
+- Component Design #3: `ComplexNumber`
+  - **Description**:
+    - The ComplexNumber component represents a complex number, a mathematical entity with both a real and an imaginary part. It is designed to be a fundamental building block for scientific and engineering applications requiring complex arithmetic, such as signal processing, quantum computing simulations, and electrical engineering calculations. The design emphasizes a clear separation between a minimal kernel interface for primitive operations and a richer secondary interface for more complex, layered functionality.
+  - **Kernel Methods**:
+    - `void set(double real, double imaginary)` : Sets the value of the
+complex number to the specified real and imaginary parts.
+    - `double getReal()`: Returns the real part of the complex number.
+    - `double getImaginary()` : Returns the imaginary part of the complex number.
+    - `boolean isZero()` : Reports whether the complex number is zero (both real and imaginary parts are zero).
+
+  - **Secondary Methods**:
+    - `void add(ComplexNumber comp)` : Adds another complex number to this one, modifying this in place.
+    - `void subtract(ComplexNumber comp)` : Subtracts another complex number from this one.
+    - `void multiply(ComplexNumber comp)` : Multiplies this complex number by another using the formula $(a+bi)(c+di) = (ac-bd) + (ad+bc)i$.
+    - `double magnitude()`: Calculates the magnitude (or modulus) of the complex number: $sqrt(real² + imaginary²)$.
+    - `void conjugate()` : Computes the complex conjugate of this number by negating its imaginary part.
+    - `double argument()` : Returns the argument (angle) of the complex number in radians.
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, the component is mutable. It inherits `clear()` , `newInstance()` , and `transferFrom()` which all mutate `this` . The kernel method `set` and secondary methods like `add `,`subtract` , `multiply` , and `conjugate` all modify the complex number’s internal state.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - No, this component does not require any internal helper classes. The representation of a complex number is simple enough (two double values for real and imaginary parts) that it can be fully managed within the main component class itself.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - Yes, it would be beneficial to include public static final constants for common complex numbers. Useful constants would include ZERO(0+0i), ONE (1+1i), and I (0+1i, the imaginary unit) to improve code readability and prevent the creation of unnecessary objects for these commonly used values.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes. A secondary method like `add(ComplexNumber other)` can be implemented by layering on the kernel methods `getReal()`, `getImaginary()`, and `set()`:
+      ```java
+      public void add(ComplexNumber other) {
+        double newReal = this.getReal() + other.getReal();
+        double newImag = this.getImaginary() + other.getImaginary();
+        this.set(newReal, newImag);
+      }
+      ```
 
 ## Post-Assignment
 
@@ -281,7 +344,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -320,7 +382,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -330,11 +391,10 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
+
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -361,7 +421,7 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
+
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
