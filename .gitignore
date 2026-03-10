@@ -38,3 +38,5 @@ replay_pid*
 bin/*
 
 doc/02-component-proof-of-concept/proof-of-concept.md
+
+*.json

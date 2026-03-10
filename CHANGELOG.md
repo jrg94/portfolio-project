@@ -12,6 +12,22 @@ the following form: YYYY.0M.0D.
 - Fixed broken links
 - Disabled AI features globally
 
+## [2026.03.10]
+
+### Added
+
+- Designed `TensorKernel` interface extending `Standard<Tensor>` with 5 kernel
+  methods: `get`, `set`, `shape`, `isZero`, `reshape`
+- Designed `Tensor` enhanced interface extending `TensorKernel` with 5 secondary
+  methods: `add`, `scale`, `sum`, `fill`, `multiply`
+- Added hierarchy diagram to `doc/03-component-interfaces/hierarchy.md`
+
+### Changed
+
+- Reclassified `reshape` from secondary to kernel: no combination of `get`,
+  `set`, `shape`, or `isZero` can alter shape metadata, so it is a structural
+  primitive that belongs in the kernel
+
 ## [2026.02.26]
 
 ### Added
