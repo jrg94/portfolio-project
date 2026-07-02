@@ -35,6 +35,16 @@ completing the following tasks:
 
 ## Assignment Rubric
 
+The assignment is graded broadly on the following categories. See Carmen for
+the official rubric:
+
+- Layering: how well does the component follow the discipline?
+- Best Practices: how well-written is the code?
+- Testing: how systematic are the test cases?
+- Reflection
+
+TODO: finish this section
+
 ## Assignment Instructions
 
 To complete the assignment, you must do the following **in order**:
