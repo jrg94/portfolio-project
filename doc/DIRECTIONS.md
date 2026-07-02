@@ -19,6 +19,20 @@ scratch using OSU's discipline as follows:
 - Create one kernel implementation as described in the
    [component kernel implementation docs](05-component-kernel-implementation\05-component-kernel-implementation.md)
 
+In addition, you must complete the following tasks:
+
+- Write a systematic test suite for all methods in each interface as well as the
+  common methods as described in the
+- Write two qualitatively different use cases for your component as described in the
+  [finishing touches doc](06-component-finishing-touches\06-component-finishing-touches.md)
+
+Finally, you may take your component above and beyond expectations by
+completing the following tasks:
+
+- Create a CI pipeline that automates your testing on GitHub
+- Generate documentation for you component using JavaDoc
+- Version your component using your preferred versioning style
+
 ## Assignment Rubric
 
 ## Assignment Instructions
