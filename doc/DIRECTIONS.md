@@ -38,10 +38,11 @@ completing the following tasks:
 The assignment is graded broadly on the following categories. See Carmen for
 the official rubric:
 
-- Discipline (50%): how well does the component follow the discipline?
-- Testing (20%): how systematic are the test cases?
-- Best Practices (15%): how well-written is the code?
-- Reflection (15%): how thoughtful is the writing?
+- Discipline (40%): how well does the component follow the discipline?
+- Best Practices (20%): how well-written is the code?
+- Use Cases (15%): how well do the use cases show off the component?
+- Testing (15%): how systematic are the test cases?
+- Reflection (10%): how thoughtful is the writing?
 
 ## Assignment Instructions
 
