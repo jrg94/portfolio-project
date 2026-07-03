@@ -1,5 +1,5 @@
 {
-    "chat.disableAIFeatures": true,
+    "chat.disableAIFeatures": false,
     "code-runner.showRunIconInEditorTitleMenu": false,
     "editor.rulers": [
         80,

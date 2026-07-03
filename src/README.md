@@ -1,7 +1,7 @@
 # SRC Folder
 
 This README exists, so the folder shows up in source control like git. This
-file is not needed and can be safely deleted. 
+file is not needed and can be safely deleted.
 
 However, for completeness, this folder exists for the purpose of storing your
 source code. As a reminder, by discipline, this folder must contain at least
@@ -16,7 +16,7 @@ Ideally, you will want to package your component appropriately as well.
 That means not just dumping your source code in the `src` folder but actually
 creating nested folders for grouping similar components. For example, the
 `NaturalNumber` API can be found in the `src/components/naturalnumber` package.
-In other words, you would need to nest a `components` folder in the `src` 
+In other words, you would need to nest a `components` folder in the `src`
 folder. Then, nest the `naturalnumber` folder in the `components` folder.
 The result would be the following directory structure:
 
@@ -31,3 +31,13 @@ src
 ```
 
 If done correctly, your portfolio can be bundled as its own `.jar`.
+
+This project now includes a new `components.jenga` component:
+
+- `JengaTowerKernel.java`
+- `JengaTower.java`
+- `JengaTowerSecondary.java`
+- `JengaTower1L.java`
+
+The component models a Jenga stack where pulling or shaking the tower may
+collapse it and clear all blocks.
