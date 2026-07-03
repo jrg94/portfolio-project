@@ -32,12 +32,5 @@ src
 
 If done correctly, your portfolio can be bundled as its own `.jar`.
 
-This project now includes a new `components.jenga` component:
-
-- `JengaTowerKernel.java`
-- `JengaTower.java`
-- `JengaTowerSecondary.java`
-- `JengaTower1L.java`
-
 The component models a Jenga stack where pulling or shaking the tower may
 collapse it and clear all blocks.
