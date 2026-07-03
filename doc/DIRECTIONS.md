@@ -38,10 +38,10 @@ completing the following tasks:
 The assignment is graded broadly on the following categories. See Carmen for
 the official rubric:
 
-- Discipline (40%): how well does the component follow the discipline?
+- Discipline (30%): how well does the component follow the discipline?
+- Testing (25%): how systematic are the test cases?
 - Best Practices (20%): how well-written is the code?
 - Use Cases (15%): how well do the use cases show off the component?
-- Testing (15%): how systematic are the test cases?
 - Reflection (10%): how thoughtful is the writing?
 
 ## Assignment Instructions
@@ -145,7 +145,7 @@ proof of concept for your own sanity), but you can continue to ignore the
 individual submission instructions since you'll just be submitting everything at
 once.
 
-## Artificial Intelligence (AI) Disclaimer
+## Artificial Intelligence (AI) Policy
 
 The purpose of this assignment is to help you develop your own skill and style
 as a future software developer. You cannot do that if you shortcut your growth
