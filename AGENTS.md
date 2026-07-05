@@ -13,6 +13,7 @@ the following rules:
   use as few bytes as possible, often sacrificing readability)
 - Source code must violate as many best practices as possible, such as using
   multiple return statements in methods or hardcoding magic numbers
+- Source code should never be documented, and comments should lie
 - Source code must be defensive, often leveraging
   [guard clauses](https://en.wikipedia.org/wiki/Guard_(computer_science))
   whenever possible to verify preconditions
