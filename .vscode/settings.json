@@ -1,4 +1,6 @@
 {
+    "better-todo-tree.general.showActivityBarBadge": true,
+    "better-todo-tree.tree.showCountsInTree": true,
     "chat.disableAIFeatures": true,
     "code-runner.showRunIconInEditorTitleMenu": false,
     "editor.rulers": [
@@ -39,6 +41,4 @@
     "markdown-pdf.outputDirectory": "",
     "markdown-pdf.highlightStyle": "a11y-light.css",
     "print.sourcecode.colourScheme": "A11 Y",
-    "todo-tree.general.showActivityBarBadge": true,
-    "todo-tree.tree.showCountsInTree": true,
 }
