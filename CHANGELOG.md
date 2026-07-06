@@ -11,6 +11,8 @@ the following form: YYYY.0M.0D.
 - Disabled an aspect of the coderunner extension
 - Fixed broken links
 - Disabled AI features globally
+- Added an AGENTS.md file
+- Added simplified DIRECTIONS.md file
 
 ## [2024.12.30]
 

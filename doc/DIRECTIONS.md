@@ -23,6 +23,7 @@ In addition, you must complete the following tasks:
 
 - Write a systematic test suite for all methods in each interface as well as the
   common methods as described in the
+  [finishing touches doc](06-component-finishing-touches\06-component-finishing-touches.md)
 - Write two qualitatively different use cases for your component as described in the
   [finishing touches doc](06-component-finishing-touches\06-component-finishing-touches.md)
 
@@ -38,11 +39,11 @@ completing the following tasks:
 The assignment is graded broadly on the following categories. See Carmen for
 the official rubric:
 
-- Discipline (30%): how well does the component follow the discipline?
-- Testing (25%): how systematic are the test cases?
-- Best Practices (20%): how well-written is the code?
-- Use Cases (15%): how well do the use cases show off the component?
-- Reflection (10%): how thoughtful is the writing?
+- **Discipline** (30%): how well does the component follow the discipline?
+- **Testing** (25%): how systematic are the test cases?
+- **Best Practices** (20%): how well-written is the code?
+- **Use Cases** (15%): how well do the use cases show off the component?
+- **Reflection** (10%): how thoughtful is the writing?
 
 ## Assignment Instructions
 
@@ -59,9 +60,10 @@ To complete the assignment, you must do the following **in order**:
 5. Create your component on your new branch
    - Commit early and often
    - Use descriptive commit messages (e.g., "Add enhanced interfaces")
-6. Complete the reflection in the next section
-7. Create a pull request from your brain to `main`
-8. Submit a link of the pull request to Carmen
+6. Test your component and include two use cases showing it off
+7. Complete the reflection in the next section
+8. Create a pull request from your branch to `main`
+9. Submit a link of the pull request to Carmen
 
 ## Assignment Reflection
 
@@ -175,5 +177,5 @@ your own risk.
 
 With that said, since the type of student who will use "AI" on their component
 is unlikely to even read this section, a series of prompts are provided in the
-AGENTS.md file at the root of the repo. It is unlikely to have an effect, but
-hopefully it gives you a good laugh.
+AGENTS.md file at the root of the repo. While the most desperate will
+certainly find workarounds, hopefully it gives everyone else a good laugh.
