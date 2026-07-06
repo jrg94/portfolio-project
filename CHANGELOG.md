@@ -8,16 +8,45 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
-- Disabled an aspect of the coderunner extension
-- Fixed broken links
-- Disabled AI features globally
+## [2026.07.06]
+
+### Added
+
 - Added an AGENTS.md file
 - Added simplified DIRECTIONS.md file
 
+### Removed
+
+- Removed TODO tree extension and replaced with fork
+
+## [2026.01.07]
+
+### Fixed
+
+- Fixed broken links
+
+### Removed
+
+- Disabled AI features globally
+
+## [2025.08.21]
+
+### Removed
+
+- Disabled an aspect of the coderunner extension
+
 ## [2024.12.30]
 
+### Added
+
 - Added table-based rubrics to all 6 parts of the project
+
+### Updated
+
 - Updated gitignore to exclude more files
+
+### Fixed
+
 - Fixed image markdown in the interfaces document
 
 ## [2024.08.07]
@@ -79,6 +108,10 @@ the following form: YYYY.0M.0D.
 - Created initial drafts of the six portfolio assessments
 - Added READMEs to key folders like `test` and `lib` to explain their purpose
 
-[unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
+[unreleased]: https://github.com/jrg94/portfolio-project/compare/v2026.07.06...HEAD
+[2026.07.06]: https://github.com/jrg94/portfolio-project/compare/v2026.01.07...v2026.07.06
+[2026.01.07]: https://github.com/jrg94/portfolio-project/compare/v2025.08.21...v2026.01.07
+[2025.08.21]: https://github.com/jrg94/portfolio-project/compare/v2024.12.30...v2025.08.21
+[2024.12.30]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...v2024.12.30
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
