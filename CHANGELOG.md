@@ -8,6 +8,8 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+- Fixed an issue where the course URLs dropped the `web-sw1` paths
+
 ## [2026.07.06]
 
 ### Added
