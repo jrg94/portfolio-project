@@ -82,7 +82,7 @@ template.
 
 Now that you have everything setup, you can begin crafting your component. All
 of the directions you need to get started are in the
-[DIRECTIONS.md](doc\DIRECTIONS.md) file under the docs folder.
+[DIRECTIONS.md](doc/DIRECTIONS.md) file under the docs folder.
 
 [components-jar]: https://cse22x1.engineering.osu.edu/common/components.jar
 [jdk-downloads]: https://www.oracle.com/java/technologies/downloads/
