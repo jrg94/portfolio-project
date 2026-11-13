@@ -13,19 +13,19 @@ In this assignment, you are tasked with creating a software component from
 scratch using OSU's discipline as follows:
 
 - Create the kernel and enhanced interfaces as described in the
-   [component interfaces docs](03-component-interfaces\03-component-interfaces.md)
+   [component interfaces docs](03-component-interfaces/03-component-interfaces.md)
 - Create the secondary abstract class as described in the
-   [component abstract class docs](04-component-abstract-class\04-component-abstract-class.md)
+   [component abstract class docs](04-component-abstract-class/04-component-abstract-class.md)
 - Create one kernel implementation as described in the
-   [component kernel implementation docs](05-component-kernel-implementation\05-component-kernel-implementation.md)
+   [component kernel implementation docs](05-component-kernel-implementation/05-component-kernel-implementation.md)
 
 In addition, you must complete the following tasks:
 
 - Write a systematic test suite for all methods in each interface as well as the
   common methods as described in the
-  [finishing touches doc](06-component-finishing-touches\06-component-finishing-touches.md)
+  [finishing touches doc](06-component-finishing-touches/06-component-finishing-touches.md)
 - Write two qualitatively different use cases for your component as described in the
-  [finishing touches doc](06-component-finishing-touches\06-component-finishing-touches.md)
+  [finishing touches doc](06-component-finishing-touches/06-component-finishing-touches.md)
 
 Finally, you may take your component above and beyond expectations by
 completing the following tasks:
@@ -140,7 +140,7 @@ second midterm, where you can submit your completed component for an initial
 grade. Any submissions after this point will not have a chance to resubmit.
 
 Finally, if you have no idea where to start, consider checking out the
-[part 1 docs](01-component-brainstorming\01-component-brainstorming.md).
+[part 1 docs](01-component-brainstorming/01-component-brainstorming.md).
 There, you'll find a link to an article that includes project ideas. It is
 recommended to follow the instructions in parts 1 through 6 anyway (even the
 proof of concept for your own sanity), but you can continue to ignore the
