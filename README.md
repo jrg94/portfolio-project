@@ -9,6 +9,35 @@ or not to make your own, consider the following testimonial:
 > design something that reflected my interests. This made the experience
 > rewarding and enjoyable as I created a product I was proud of!
 
+Given the proliferation of LLMs and their ability to one-shot something
+like this, I once considered getting rid of this project. If you're reading
+this, you have the following student's mildly edited testimonial to thank:
+
+> I recently heard that you were considering removing the portfolio project
+> from future semesters, and I wanted to share my experience because that
+> **assignment genuinely helped me discover my interest in control systems.**
+> 
+> After taking your class, I joined \[a control systems lab\] over the summer.
+> There, I worked on autonomous vehicle systems, including PID controller tuning
+> and real-vehicle testing.
+>
+> It was exciting to go from writing a PID controller for a class project to
+> seeing how PID tuning affects the behavior of a real vehicle just a few months
+> later. I've attached a photo of our research vehicle at the testing site; in
+> case you'd be interested in seeing where that project eventually led me.
+> 
+> Looking back, I feel that your portfolio project accomplished exactly what it
+> was intended to do for me: it encouraged me to explore something I was genuinely
+> interested in and helped shape the direction I now hope to pursue in graduate
+> school and my career.
+>
+> Thank you again for your time and for making that project part of the course.
+> It really made a difference for me.
+
+Hopefully, this also encourages you to complete the project honestly. I would
+rather not grade something that you have not written. It's genuinely 
+soul-crushing.
+
 ## Recommended Steps to Get Started
 
 When starting your portfolio project, the following steps should make your life
